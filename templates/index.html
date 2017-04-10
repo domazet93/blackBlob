@@ -4,13 +4,14 @@
     <head>
         <title>Black Blob</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" type="text/css" href="{% static 'app/css/bootstrap/bootstrap.min.css' %}">
         <link rel="stylesheet" type="text/css" href="{% static 'app/css/style.scss.css' %}">
     </head>
     <body>
         <div id="wrapper">
-            Hello world
-
-            <script type="text/javascript" src="{% static 'app/bundle.js' %}"></script>
+            <app></app>
         </div>
+
+        <script type="text/javascript" src="{% static 'app/bundle.js' %}"></script>
     </body>
 </html>

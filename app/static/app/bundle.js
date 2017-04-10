@@ -180,22 +180,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     name: "app"
@@ -213,6 +197,16 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     name: "contact"
@@ -224,6 +218,37 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Navigation__ = __webpack_require__(19);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Navigation___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__Navigation__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -231,8 +256,14 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 
+
+
+
 /* harmony default export */ __webpack_exports__["default"] = ({
-    name: "home"
+    name: "home",
+    components: {
+        Navigation: __WEBPACK_IMPORTED_MODULE_0__Navigation___default.a
+    }
 });
 
 /***/ }),
@@ -557,8 +588,38 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     attrs: {
       "id": "home"
     }
-  }, [_vm._v("\n    Home\n")])
-},staticRenderFns: []}
+  }, [_vm._m(0), _vm._v(" "), _c('div', {
+    staticClass: "row"
+  }, [_c('div', {
+    staticClass: "col-md-4 col-md-offset-4"
+  }, [_c('navigation')], 1)]), _vm._v(" "), _vm._m(1), _vm._v(" "), _vm._m(2)])
+},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "greeting"
+  }, [_c('div', {
+    staticClass: "row"
+  }, [_c('h2', [_vm._v("Hello world")])]), _vm._v(" "), _c('div', {
+    staticClass: "row"
+  }, [_c('p', [_vm._v("Thinking of what to write in a greeting card can be hard work!")])]), _vm._v(" "), _c('div', {
+    staticClass: "row"
+  }, [_c('img', {
+    attrs: {
+      "src": __webpack_require__(17)
+    }
+  })])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "row"
+  }, [_c('div', {
+    staticClass: "col-md-4 col-md-offset-2"
+  }, [_c('h2', [_vm._v("First")]), _vm._v(" "), _c('p', [_vm._v("I've tried this for both row, and span12, but my table inside span12, inside row always sits left. Adding padding moves it to the center, but I want to center it in a responsive way. Can I do auto padding somehow?")])]), _vm._v(" "), _c('div', {
+    staticClass: "col-md-4"
+  }, [_c('h2', [_vm._v("First")]), _vm._v(" "), _c('p', [_vm._v("I've tried this for both row, and span12, but my table inside span12, inside row always sits left. Adding padding moves it to the center, but I want to center it in a responsive way. Can I do auto padding somehow?")])])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "row"
+  }, [_c('h2', [_vm._v("First")]), _vm._v(" "), _c('p', [_vm._v("I've tried this for both row, and span12, but my table inside span12, inside row always sits left. Adding padding moves it to the center, but I want to center it in a responsive way. Can I do auto padding somehow?")])])
+}]}
 module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()
@@ -572,12 +633,41 @@ if (false) {
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _vm._m(0)
+},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     attrs: {
       "id": "contact"
     }
-  }, [_vm._v("\n    Contact\n")])
-},staticRenderFns: []}
+  }, [_c('h2', [_vm._v("Contact")]), _vm._v(" "), _c('div', {
+    staticClass: "row contact-body"
+  }, [_c('div', {
+    staticClass: "col-md-8"
+  }, [_c('input', {
+    attrs: {
+      "type": "text",
+      "name": "fullname",
+      "placeholder": "Fullname"
+    }
+  }), _vm._v(" "), _c('input', {
+    attrs: {
+      "type": "email",
+      "placeholder": "Email"
+    }
+  }), _vm._v(" "), _c('textarea', {
+    attrs: {
+      "placeholder": "Message"
+    }
+  }), _vm._v(" "), _c('input', {
+    staticClass: "btn",
+    attrs: {
+      "type": "button",
+      "value": "Get in touch"
+    }
+  })]), _vm._v(" "), _c('div', {
+    staticClass: "col-md-4"
+  })])])
+}]}
 module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()
@@ -595,17 +685,9 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     attrs: {
       "id": "app"
     }
-  }, [_c('nav', [_c('div', {
-    staticClass: "nav-wrapper"
-  }, [_vm._v("\n            Logo\n            "), _c('ul', [_c('li', [_c('router-link', {
-    attrs: {
-      "to": "/"
-    }
-  }, [_vm._v("\n                        Home\n                    ")])], 1), _vm._v(" "), _c('li', [_c('router-link', {
-    attrs: {
-      "to": "/contact"
-    }
-  }, [_vm._v("\n                        Contact\n                    ")])], 1)])])]), _vm._v(" "), _c('router-view')], 1)
+  }, [_c('div', {
+    staticClass: "container"
+  }, [_c('router-view')], 1)])
 },staticRenderFns: []}
 module.exports.render._withStripped = true
 if (false) {
@@ -12383,6 +12465,114 @@ module.exports = g;
 __webpack_require__(0);
 module.exports = __webpack_require__(0);
 
+
+/***/ }),
+/* 17 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "images/avatar.png";
+
+/***/ }),
+/* 18 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+    name: "navigation"
+});
+
+/***/ }),
+/* 19 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var Component = __webpack_require__(1)(
+  /* script */
+  __webpack_require__(18),
+  /* template */
+  __webpack_require__(20),
+  /* scopeId */
+  null,
+  /* cssModules */
+  null
+)
+Component.options.__file = "/home/toni/Radna površina/blackBlob/project/app/static/app/js/components/Navigation.vue"
+if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
+if (Component.options.functional) {console.error("[vue-loader] Navigation.vue: functional components are not supported with templates, they should use render functions.")}
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-81a81a7a", Component.options)
+  } else {
+    hotAPI.reload("data-v-81a81a7a", Component.options)
+  }
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 20 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    attrs: {
+      "id": "navigation"
+    }
+  }, [_c('nav', {
+    staticClass: "navbar"
+  }, [_c('ul', [_c('li', [_c('router-link', {
+    attrs: {
+      "to": "/"
+    }
+  }, [_vm._v("\n                    Home\n                ")])], 1), _vm._v(" "), _c('li', [_c('router-link', {
+    attrs: {
+      "to": "/contact"
+    }
+  }, [_vm._v("\n                    Contact\n                ")])], 1), _vm._v(" "), _c('li', [_c('router-link', {
+    attrs: {
+      "to": "/contact"
+    }
+  }, [_vm._v("\n                    Contact\n                ")])], 1)])])])
+},staticRenderFns: []}
+module.exports.render._withStripped = true
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+     require("vue-hot-reload-api").rerender("data-v-81a81a7a", module.exports)
+  }
+}
 
 /***/ })
 /******/ ]);

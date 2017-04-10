@@ -3,10 +3,28 @@ SHARED
 ------------------------------------- */
 $primary-color: #4D4766;
 
-nav {
-    background-color: $primary-color;
-}
 
+/* -------------------------------------
+HOME
+------------------------------------- */
+
+.greeting {
+
+    text-align:center;
+
+}
+.navbar {
+    ul {
+        list-style: none;
+        padding: 0;
+        li {
+            display: inline;
+            font-size: 1.2em;
+        }
+    }
+    text-align:center;
+
+}
 
 /* -------------------------------------
 CONTACT
@@ -17,6 +35,19 @@ CONTACT
     .btn {
         background-color: $primary-color
     }
-
+    .contact-body {
+        input, textarea {
+            width:80%;
+            border-radius: 3px;
+            border:1px solid #bbb;
+            padding:10px 0;
+            margin-bottom:10px;
+            text-indent:10px;
+        }
+        textarea {
+            max-width:80%;
+        }
+    }
 
 }
+
