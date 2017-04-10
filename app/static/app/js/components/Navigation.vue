@@ -8,8 +8,8 @@
                     </router-link>
                 </li>
                 <li>
-                    <router-link to="/contact">
-                        Contact
+                    <router-link to="/blog">
+                        Blog
                     </router-link>
                 </li>
                 <li>
