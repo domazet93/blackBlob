@@ -28,13 +28,18 @@ CONTACT
 #contact .btn {
   background-color: #4D4766; }
 
-#contact .contact-body input, #contact .contact-body textarea {
-  width: 80%;
+#contact .contact-body input, #contact .contact-body textarea, #contact .contact-body .alert {
   border-radius: 3px;
   border: 1px solid #bbb;
   padding: 10px 0;
   margin-bottom: 10px;
-  text-indent: 10px; }
+  text-indent: 10px;
+  width: 100%; }
 
 #contact .contact-body textarea {
-  max-width: 80%; }
+  max-width: 100%; }
+
+#contact .contact-body .alert-danger {
+  color: #a94442;
+  background-color: #f2dede;
+  border-color: #ebccd1; }

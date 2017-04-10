@@ -36,18 +36,22 @@ CONTACT
         background-color: $primary-color
     }
     .contact-body {
-        input, textarea {
-            width:80%;
-            border-radius: 3px;
-            border:1px solid #bbb;
-            padding:10px 0;
-            margin-bottom:10px;
-            text-indent:10px;
-        }
-        textarea {
-            max-width:80%;
-        }
+            input, textarea, .alert {
+                border-radius: 3px;
+                border:1px solid #bbb;
+                padding:10px 0;
+                margin-bottom:10px;
+                text-indent:10px;
+                width:100%;
+            }
+            textarea {
+                max-width:100%;
+            }
+            .alert-danger {
+                color: #a94442;
+                background-color: #f2dede;
+                border-color: #ebccd1;
+            }
     }
-
 }
 
