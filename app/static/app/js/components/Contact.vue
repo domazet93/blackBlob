@@ -1,18 +1,40 @@
 <template>
     <div id="contact">
-        <navigation></navigation>
-        <h2>Contact</h2>
-        <div class="row">
-            <div class="col-md-8 contact-body">
-                <div class="alert alert-danger" v-if="isInvalidForm">
-                    <span>Form is not valid</span>
-                </div>
-                <input type="text" name="fullname" placeholder="Fullname" v-model="formData.name">
-                <input type="email" placeholder="Email" v-model="formData.email">
-                <textarea placeholder="Message" rows="10" v-model="formData.msg"></textarea>
-                <input type="button" class="btn" value="Get in touch" @click="onSubmit()">
+        <div class="row text-center">
+            <div class="col-md-4 col-md-offset-4">
+                <navigation></navigation>
             </div>
-            <div class="col-md-4">
+        </div>
+        <div class="row">
+            <div class="col-md-12 ">
+                <div class="content">
+                    <h2>Contact</h2>
+                    <div class="row">
+                        <div class="col-md-4 contact-body">
+                            <div class="alert alert-danger" v-if="isInvalidForm">
+                                <span>Form is not valid</span>
+                            </div>
+                            <label for="subject">Subject</label>
+                            <input type="text" name="subject" id="subject" v-model="formData.subject">
+
+                            <label for="fullname">Fullname</label>
+                            <input type="text" name="fullname" id="fullname" v-model="formData.name">
+
+                            <label for="email">Email</label>
+                            <input type="email" id="email" v-model="formData.email">
+
+                        </div>
+                        <div class="col-md-8 contact-body">
+                            <label for="message">Message</label>
+                            <textarea  name="message" id="message" rows="9" v-model="formData.msg"></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 contact-body">
+                <input type="button" class="btn" value="Get in touch" @click="onSubmit()">
             </div>
         </div>
     </div>
@@ -26,7 +48,8 @@
         data() {
             return {
                 formData: {
-                    name: "",
+                    subject: "",
+                    fullname: "",
                     email: "",
                     msg: ""
                 },
@@ -39,7 +62,7 @@
                 this.checkIsValidForm();
             },
             checkIsValidForm() {
-                if(this.formData.name.length < 2) {
+                if(this.formData.fullname.length < 2) {
                     return this.isInvalidForm = true;
                 }
                 if(emailValidator(this.formData.email) === null) {
