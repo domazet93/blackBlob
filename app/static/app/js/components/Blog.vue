@@ -1,17 +1,27 @@
 <template>
     <div id="blog">
-        Blog
+        <div class="row text-center">
+            <div class="col-md-4 col-md-offset-4">
+                <navigation></navigation>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 col-md-offset-4">
+                Blog
+            </div>
+        </div>
     </div>
 </template>
 
 <script>
 
-    import Blog from "./Blog";
+    import Navigation from "./Navigation";
 
     export default {
         name: "blog",
         components: {
-            Blog
+            Navigation
         }
     };
+
 </script>

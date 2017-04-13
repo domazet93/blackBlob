@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "/static/app/";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 24);
+/******/ 	return __webpack_require__(__webpack_require__.s = 28);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -135,7 +135,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.router = undefined;
 
-var _vueRouter = __webpack_require__(21);
+var _vueRouter = __webpack_require__(25);
 
 var _vueRouter2 = _interopRequireDefault(_vueRouter);
 
@@ -143,7 +143,7 @@ var _routes = __webpack_require__(9);
 
 var _routes2 = _interopRequireDefault(_routes);
 
-var _App = __webpack_require__(13);
+var _App = __webpack_require__(14);
 
 var _App2 = _interopRequireDefault(_App);
 
@@ -164,7 +164,7 @@ new Vue({
     template: "<App/>",
     components: { App: _App2.default }
 });
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(22)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(26)))
 
 /***/ }),
 /* 2 */
@@ -172,43 +172,9 @@ new Vue({
 
 var Component = __webpack_require__(0)(
   /* script */
-  __webpack_require__(5),
-  /* template */
-  __webpack_require__(18),
-  /* scopeId */
-  null,
-  /* cssModules */
-  null
-)
-Component.options.__file = "/home/toni/Radna površina/blackBlob/project/app/static/app/js/components/Blog.vue"
-if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
-if (Component.options.functional) {console.error("[vue-loader] Blog.vue: functional components are not supported with templates, they should use render functions.")}
-
-/* hot reload */
-if (false) {(function () {
-  var hotAPI = require("vue-hot-reload-api")
-  hotAPI.install(require("vue"), false)
-  if (!hotAPI.compatible) return
-  module.hot.accept()
-  if (!module.hot.data) {
-    hotAPI.createRecord("data-v-870382de", Component.options)
-  } else {
-    hotAPI.reload("data-v-870382de", Component.options)
-  }
-})()}
-
-module.exports = Component.exports
-
-
-/***/ }),
-/* 3 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var Component = __webpack_require__(0)(
-  /* script */
   __webpack_require__(8),
   /* template */
-  __webpack_require__(17),
+  __webpack_require__(21),
   /* scopeId */
   null,
   /* cssModules */
@@ -235,11 +201,39 @@ module.exports = Component.exports
 
 
 /***/ }),
+/* 3 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_MainFooter__ = __webpack_require__(18);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_MainFooter___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__components_MainFooter__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+    name: "app",
+    components: {
+        MainFooter: __WEBPACK_IMPORTED_MODULE_0__components_MainFooter___default.a
+    }
+});
+
+/***/ }),
 /* 4 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Navigation__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Navigation___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__Navigation__);
 //
 //
 //
@@ -248,19 +242,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-
-/* harmony default export */ __webpack_exports__["default"] = ({
-    name: "app"
-});
-
-/***/ }),
-/* 5 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Blog__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Blog___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__Blog__);
+//
 //
 //
 //
@@ -274,20 +256,42 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony default export */ __webpack_exports__["default"] = ({
     name: "blog",
     components: {
-        Blog: __WEBPACK_IMPORTED_MODULE_0__Blog___default.a
+        Navigation: __WEBPACK_IMPORTED_MODULE_0__Navigation___default.a
     }
 });
 
 /***/ }),
-/* 6 */
+/* 5 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_Navigation__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_Navigation__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_Navigation___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__components_Navigation__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__shared_emailValidator__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__shared_emailValidator___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__shared_emailValidator__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -316,7 +320,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     data() {
         return {
             formData: {
-                name: "",
+                subject: "",
+                fullname: "",
                 email: "",
                 msg: ""
             },
@@ -329,7 +334,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             this.checkIsValidForm();
         },
         checkIsValidForm() {
-            if (this.formData.name.length < 2) {
+            if (this.formData.fullname.length < 2) {
                 return this.isInvalidForm = true;
             }
             if (__WEBPACK_IMPORTED_MODULE_1__shared_emailValidator___default()(this.formData.email) === null) {
@@ -345,13 +350,18 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 7 */
+/* 6 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Navigation__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Navigation__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Navigation___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__Navigation__);
+//
+//
+//
+//
+//
 //
 //
 //
@@ -399,11 +409,40 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
+/* 7 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+    name: "MainFooter"
+});
+
+/***/ }),
 /* 8 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -444,15 +483,15 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 
-var _Home = __webpack_require__(15);
+var _Home = __webpack_require__(17);
 
 var _Home2 = _interopRequireDefault(_Home);
 
-var _Blog = __webpack_require__(2);
+var _Blog = __webpack_require__(15);
 
 var _Blog2 = _interopRequireDefault(_Blog);
 
-var _Contact = __webpack_require__(14);
+var _Contact = __webpack_require__(16);
 
 var _Contact2 = _interopRequireDefault(_Contact);
 
@@ -487,6 +526,12 @@ module.exports = __webpack_require__.p + "images/avatar.png";
 
 /***/ }),
 /* 12 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "images/development.jpg";
+
+/***/ }),
+/* 13 */
 /***/ (function(module, exports) {
 
 // shim for using process in browser
@@ -672,14 +717,14 @@ process.umask = function() { return 0; };
 
 
 /***/ }),
-/* 13 */
+/* 14 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var Component = __webpack_require__(0)(
   /* script */
-  __webpack_require__(4),
+  __webpack_require__(3),
   /* template */
-  __webpack_require__(20),
+  __webpack_require__(24),
   /* scopeId */
   null,
   /* cssModules */
@@ -706,14 +751,48 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 14 */
+/* 15 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var Component = __webpack_require__(0)(
   /* script */
-  __webpack_require__(6),
+  __webpack_require__(4),
   /* template */
-  __webpack_require__(19),
+  __webpack_require__(22),
+  /* scopeId */
+  null,
+  /* cssModules */
+  null
+)
+Component.options.__file = "/home/toni/Radna površina/blackBlob/project/app/static/app/js/components/Blog.vue"
+if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
+if (Component.options.functional) {console.error("[vue-loader] Blog.vue: functional components are not supported with templates, they should use render functions.")}
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-870382de", Component.options)
+  } else {
+    hotAPI.reload("data-v-870382de", Component.options)
+  }
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 16 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var Component = __webpack_require__(0)(
+  /* script */
+  __webpack_require__(5),
+  /* template */
+  __webpack_require__(23),
   /* scopeId */
   null,
   /* cssModules */
@@ -740,14 +819,14 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 15 */
+/* 17 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var Component = __webpack_require__(0)(
   /* script */
-  __webpack_require__(7),
+  __webpack_require__(6),
   /* template */
-  __webpack_require__(16),
+  __webpack_require__(20),
   /* scopeId */
   null,
   /* cssModules */
@@ -774,7 +853,64 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 16 */
+/* 18 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var Component = __webpack_require__(0)(
+  /* script */
+  __webpack_require__(7),
+  /* template */
+  __webpack_require__(19),
+  /* scopeId */
+  null,
+  /* cssModules */
+  null
+)
+Component.options.__file = "/home/toni/Radna površina/blackBlob/project/app/static/app/js/components/MainFooter.vue"
+if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
+if (Component.options.functional) {console.error("[vue-loader] MainFooter.vue: functional components are not supported with templates, they should use render functions.")}
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-2dad5163", Component.options)
+  } else {
+    hotAPI.reload("data-v-2dad5163", Component.options)
+  }
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 19 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _vm._m(0)
+},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    attrs: {
+      "id": "footer"
+    }
+  }, [_c('div', {
+    staticClass: "container"
+  }, [_c('p', [_vm._v("Toni Domazet")])])])
+}]}
+module.exports.render._withStripped = true
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+     require("vue-hot-reload-api").rerender("data-v-2dad5163", module.exports)
+  }
+}
+
+/***/ }),
+/* 20 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -782,37 +918,34 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     attrs: {
       "id": "home"
     }
-  }, [_vm._m(0), _vm._v(" "), _c('div', {
-    staticClass: "row"
+  }, [_c('div', {
+    staticClass: "row text-center"
   }, [_c('div', {
     staticClass: "col-md-4 col-md-offset-4"
-  }, [_c('navigation')], 1)]), _vm._v(" "), _vm._m(1), _vm._v(" "), _vm._m(2)])
+  }, [_c('navigation')], 1)]), _vm._v(" "), _vm._m(0)])
 },staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
-    staticClass: "greeting"
+    staticClass: "content"
   }, [_c('div', {
-    staticClass: "row"
-  }, [_c('h2', [_vm._v("Hello world")])]), _vm._v(" "), _c('div', {
-    staticClass: "row"
-  }, [_c('p', [_vm._v("Thinking of what to write in a greeting card can be hard work!")])]), _vm._v(" "), _c('div', {
-    staticClass: "row"
-  }, [_c('img', {
-    attrs: {
-      "src": __webpack_require__(11)
-    }
-  })])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "row"
+    staticClass: "row mb-2"
   }, [_c('div', {
-    staticClass: "col-md-4 col-md-offset-2"
-  }, [_c('h2', [_vm._v("First")]), _vm._v(" "), _c('p', [_vm._v("I've tried this for both row, and span12, but my table inside span12, inside row always sits left. Adding padding moves it to the center, but I want to center it in a responsive way. Can I do auto padding somehow?")])]), _vm._v(" "), _c('div', {
+    staticClass: "col-md-4 border-light"
+  }, [_c('h2', [_vm._v("First")]), _vm._v(" "), _c('p', [_vm._v("I've tried this for both row, and span12, but my table inside span12, inside row always sits left. Adding padding moves it to the center, but I want to center it in a responsive way."), _c('br'), _c('br'), _vm._v("\n\n                Can I do auto padding somehow?I've tried this for both row, and span12, but my table inside span12, inside row always sits left. Adding padding moves it to the center, but I want to center it in a responsive way. Can I do auto padding somehow")])]), _vm._v(" "), _c('div', {
     staticClass: "col-md-4"
-  }, [_c('h2', [_vm._v("First")]), _vm._v(" "), _c('p', [_vm._v("I've tried this for both row, and span12, but my table inside span12, inside row always sits left. Adding padding moves it to the center, but I want to center it in a responsive way. Can I do auto padding somehow?")])])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
+  }, [_c('img', {
+    staticClass: "img-development",
+    attrs: {
+      "src": __webpack_require__(12)
+    }
+  })]), _vm._v(" "), _c('div', {
+    staticClass: "col-md-4 border-light"
+  }, [_c('h2', [_vm._v("First")]), _vm._v(" "), _c('p', [_vm._v("I've tried this for both row, and span12, but my table inside span12, inside row always sits left. Adding padding moves it to the center, but I want to center it in a responsive way. Can I do auto padding somehow?")])])]), _vm._v(" "), _c('div', {
     staticClass: "row"
-  }, [_c('h2', [_vm._v("First")]), _vm._v(" "), _c('p', [_vm._v("I've tried this for both row, and span12, but my table inside span12, inside row always sits left. Adding padding moves it to the center, but I want to center it in a responsive way. Can I do auto padding somehow?")])])
+  }, [_c('div', {
+    staticClass: "col-md-4 border-light"
+  }, [_c('h2', [_vm._v("First")]), _vm._v(" "), _c('p', [_vm._v("I've tried this for both row, and span12, but my table inside span12, inside row always sits left. Adding padding moves it to the center, but I want to center it in a responsive way. Can I do auto padding somehow?")])]), _vm._v(" "), _c('div', {
+    staticClass: "col-md-4 col-md-offset-4 border-light"
+  }, [_c('h2', [_vm._v("First")]), _vm._v(" "), _c('p', [_vm._v("I've tried this for both row, and span12, but my table inside span12, inside row always sits left. Adding padding moves it to the center, but I want to center it in a responsive way. Can I do auto padding somehow?")])])])])
 }]}
 module.exports.render._withStripped = true
 if (false) {
@@ -823,7 +956,7 @@ if (false) {
 }
 
 /***/ }),
-/* 17 */
+/* 21 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -831,7 +964,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     attrs: {
       "id": "navigation"
     }
-  }, [_c('nav', {
+  }, [_vm._m(0), _vm._v(" "), _vm._m(1), _vm._v(" "), _vm._m(2), _vm._v(" "), _c('nav', {
     staticClass: "navbar"
   }, [_c('ul', [_c('li', [_c('router-link', {
     attrs: {
@@ -846,7 +979,23 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "to": "/contact"
     }
   }, [_vm._v("\n                    Contact\n                ")])], 1)])])])
-},staticRenderFns: []}
+},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "row"
+  }, [_c('h2', [_vm._v("Hello world")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "row"
+  }, [_c('p', [_vm._v("Thinking of what to write in a greeting card can be hard work!")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "row"
+  }, [_c('img', {
+    attrs: {
+      "src": __webpack_require__(11)
+    }
+  })])
+}]}
 module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()
@@ -856,7 +1005,7 @@ if (false) {
 }
 
 /***/ }),
-/* 18 */
+/* 22 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -864,8 +1013,18 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     attrs: {
       "id": "blog"
     }
-  }, [_vm._v("\n    Blog\n")])
-},staticRenderFns: []}
+  }, [_c('div', {
+    staticClass: "row text-center"
+  }, [_c('div', {
+    staticClass: "col-md-4 col-md-offset-4"
+  }, [_c('navigation')], 1)]), _vm._v(" "), _vm._m(0)])
+},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "row"
+  }, [_c('div', {
+    staticClass: "col-md-4 col-md-offset-4"
+  }, [_vm._v("\n            Blog\n        ")])])
+}]}
 module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()
@@ -875,7 +1034,7 @@ if (false) {
 }
 
 /***/ }),
-/* 19 */
+/* 23 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -883,13 +1042,52 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     attrs: {
       "id": "contact"
     }
-  }, [_c('navigation'), _vm._v(" "), _c('h2', [_vm._v("Contact")]), _vm._v(" "), _c('div', {
+  }, [_c('div', {
+    staticClass: "row text-center"
+  }, [_c('div', {
+    staticClass: "col-md-4 col-md-offset-4"
+  }, [_c('navigation')], 1)]), _vm._v(" "), _c('div', {
     staticClass: "row"
   }, [_c('div', {
-    staticClass: "col-md-8 contact-body"
+    staticClass: "col-md-12 "
+  }, [_c('div', {
+    staticClass: "content"
+  }, [_c('h2', [_vm._v("Contact")]), _vm._v(" "), _c('div', {
+    staticClass: "row"
+  }, [_c('div', {
+    staticClass: "col-md-4 contact-body"
   }, [(_vm.isInvalidForm) ? _c('div', {
     staticClass: "alert alert-danger"
-  }, [_c('span', [_vm._v("Form is not valid")])]) : _vm._e(), _vm._v(" "), _c('input', {
+  }, [_c('span', [_vm._v("Form is not valid")])]) : _vm._e(), _vm._v(" "), _c('label', {
+    attrs: {
+      "for": "subject"
+    }
+  }, [_vm._v("Subject")]), _vm._v(" "), _c('input', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.formData.subject),
+      expression: "formData.subject"
+    }],
+    attrs: {
+      "type": "text",
+      "name": "subject",
+      "id": "subject"
+    },
+    domProps: {
+      "value": (_vm.formData.subject)
+    },
+    on: {
+      "input": function($event) {
+        if ($event.target.composing) { return; }
+        _vm.formData.subject = $event.target.value
+      }
+    }
+  }), _vm._v(" "), _c('label', {
+    attrs: {
+      "for": "fullname"
+    }
+  }, [_vm._v("Fullname")]), _vm._v(" "), _c('input', {
     directives: [{
       name: "model",
       rawName: "v-model",
@@ -899,7 +1097,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     attrs: {
       "type": "text",
       "name": "fullname",
-      "placeholder": "Fullname"
+      "id": "fullname"
     },
     domProps: {
       "value": (_vm.formData.name)
@@ -910,7 +1108,11 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         _vm.formData.name = $event.target.value
       }
     }
-  }), _vm._v(" "), _c('input', {
+  }), _vm._v(" "), _c('label', {
+    attrs: {
+      "for": "email"
+    }
+  }, [_vm._v("Email")]), _vm._v(" "), _c('input', {
     directives: [{
       name: "model",
       rawName: "v-model",
@@ -919,7 +1121,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }],
     attrs: {
       "type": "email",
-      "placeholder": "Email"
+      "id": "email"
     },
     domProps: {
       "value": (_vm.formData.email)
@@ -930,7 +1132,13 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         _vm.formData.email = $event.target.value
       }
     }
-  }), _vm._v(" "), _c('textarea', {
+  })]), _vm._v(" "), _c('div', {
+    staticClass: "col-md-8 contact-body"
+  }, [_c('label', {
+    attrs: {
+      "for": "message"
+    }
+  }, [_vm._v("Message")]), _vm._v(" "), _c('textarea', {
     directives: [{
       name: "model",
       rawName: "v-model",
@@ -938,8 +1146,9 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       expression: "formData.msg"
     }],
     attrs: {
-      "placeholder": "Message",
-      "rows": "10"
+      "name": "message",
+      "id": "message",
+      "rows": "9"
     },
     domProps: {
       "value": (_vm.formData.msg)
@@ -950,7 +1159,11 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         _vm.formData.msg = $event.target.value
       }
     }
-  }), _vm._v(" "), _c('input', {
+  })])])])])]), _vm._v(" "), _c('div', {
+    staticClass: "row"
+  }, [_c('div', {
+    staticClass: "col-md-4 contact-body"
+  }, [_c('input', {
     staticClass: "btn",
     attrs: {
       "type": "button",
@@ -961,9 +1174,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         _vm.onSubmit()
       }
     }
-  })]), _vm._v(" "), _c('div', {
-    staticClass: "col-md-4"
-  })])], 1)
+  })])])])
 },staticRenderFns: []}
 module.exports.render._withStripped = true
 if (false) {
@@ -974,7 +1185,7 @@ if (false) {
 }
 
 /***/ }),
-/* 20 */
+/* 24 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -984,7 +1195,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   }, [_c('div', {
     staticClass: "container"
-  }, [_c('router-view')], 1)])
+  }, [_c('router-view'), _vm._v(" "), _c('MainFooter')], 1)])
 },staticRenderFns: []}
 module.exports.render._withStripped = true
 if (false) {
@@ -995,7 +1206,7 @@ if (false) {
 }
 
 /***/ }),
-/* 21 */
+/* 25 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -3403,10 +3614,10 @@ if (inBrowser && window.Vue) {
 
 /* harmony default export */ __webpack_exports__["default"] = (VueRouter);
 
-/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(12)))
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(13)))
 
 /***/ }),
-/* 22 */
+/* 26 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(global) {/*!
@@ -12726,10 +12937,10 @@ return Vue$3;
 
 })));
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(23)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(27)))
 
 /***/ }),
-/* 23 */
+/* 27 */
 /***/ (function(module, exports) {
 
 var g;
@@ -12756,7 +12967,7 @@ module.exports = g;
 
 
 /***/ }),
-/* 24 */
+/* 28 */
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(1);
