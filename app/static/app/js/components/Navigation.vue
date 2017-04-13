@@ -1,5 +1,14 @@
 <template>
     <div id="navigation">
+        <div class="row">
+            <h2>Hello world</h2>
+        </div>
+        <div class="row">
+            <p>Thinking of what to write in a greeting card can be hard work!</p>
+        </div>
+        <div class="row">
+            <img src="~images/avatar.png">
+        </div>
         <nav class="navbar">
             <ul>
                 <li>
