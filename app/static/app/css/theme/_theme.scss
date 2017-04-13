@@ -1,97 +1,155 @@
 /* -------------------------------------
 SHARED
 ------------------------------------- */
-$primary-color: #4D4766;
 
+    $primary-color: #333;
 
-@mixin keyframes($animationName) {
-    @-webkit-keyframes #{$animationName} {
-        @content;
+    @mixin keyframes($animationName) {
+        @-webkit-keyframes #{$animationName} {
+            @content;
+        }
+        @-moz-keyframes #{$animationName} {
+            @content;
+        }
+        @-o-keyframes #{$animationName} {
+            @content;
+        }
+        @keyframes #{$animationName} {
+            @content;
+        }
     }
-    @-moz-keyframes #{$animationName} {
-        @content;
-    }
-    @-o-keyframes #{$animationName} {
-        @content;
-    }
-    @keyframes #{$animationName} {
-        @content;
-    }
-}
-@include keyframes(fadeIn) {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
 
-@mixin animate($name, $duration, $timing) {
-    -webkit-animation: $name $duration;
-    -moz-animation: $name $duration;
-    -ms-animation: $name $duration;
-    -o-animation: $name $duration;
-    animation: $name $duration;
-}
+    @include keyframes(fadeIn) {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
 
+    @mixin animate($name, $duration, $timing) {
+        -webkit-animation: $name $duration;
+        -moz-animation: $name $duration;
+        -ms-animation: $name $duration;
+        -o-animation: $name $duration;
+        animation: $name $duration;
+    }
 
-@mixin fadeIn {
-    @include animate(fadeIn, 1s, ease);
-}
+    @mixin fadeIn {
+        @include animate(fadeIn, 1s, ease);
+    }
 
+    html {
+        height: 100%;
+    }
+
+    body {
+        position: relative;
+        margin: 0;
+        padding-bottom: 6rem;
+        min-height: 100%;
+    }
+
+    ::selection {
+        background: #4ea5ca;
+        color: #fff;
+    }
+    ::-moz-selection {
+        background: #4ea5ca;
+        color: #fff;
+    }
+
+    .content {
+        @include fadeIn;
+    }
+
+    .border-light {
+        border: 1px solid #bbb;
+    }
+
+    .mb-2 {
+        margin-bottom: 2rem;
+    }
+
+    .navbar {
+        ul {
+            list-style: none;
+            padding: 0;
+            li {
+                display: inline;
+                font-size: 1.2em;
+            }
+        }
+    }
+
+    .text-center {
+        text-align: center
+    }
 
 /* -------------------------------------
 HOME
 ------------------------------------- */
+
     #home {
-        @include fadeIn;
-        .greeting {
-
-            text-align:center;
-
+        .img-development {
+            max-width:100%;
         }
-        .navbar {
-            ul {
-                list-style: none;
-                padding: 0;
-                li {
-                    display: inline;
-                    font-size: 1.2em;
-                }
-            }
-            text-align:center;
-
-        }
-
     }
+
 
 /* -------------------------------------
 CONTACT
 ------------------------------------- */
 
-#contact {
-    @include fadeIn;
-    .btn {
-        background-color: $primary-color
-    }
-    .contact-body {
-            input, textarea, .alert {
+    #contact {
+        .btn {
+            background-color: $primary-color;
+            color:#fff;
+        }
+        .contact-body {
+            input {
+                padding:10px 0
+            }
+            input, textarea {
                 border-radius: 3px;
                 border:1px solid #bbb;
-                padding:10px 0;
                 margin-bottom:10px;
                 text-indent:10px;
                 width:100%;
             }
             textarea {
                 max-width:100%;
+                padding-bottom: 12px;
+                resize: none;
             }
-            .alert-danger {
-                color: #a94442;
-                background-color: #f2dede;
-                border-color: #ebccd1;
-            }
+        }
+        margin:0 auto;
+        display:block;
     }
-}
 
+
+/* -------------------------------------
+BLOG
+------------------------------------- */
+
+    #blog {
+
+    }
+
+
+/* -------------------------------------
+FOOTER
+------------------------------------- */
+
+    #footer {
+        position: absolute;
+        bottom: 0;
+        text-align: center;
+    }
+
+    @media (max-width: 768px) {
+        #footer {
+            width: 100%;
+        }
+    }
