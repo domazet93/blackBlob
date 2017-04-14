@@ -59,17 +59,29 @@
         },
         methods: {
             onSubmit() {
-                this.checkIsValidForm();
+                // if(this.checkIsValidForm()) {
+
+                // }
+                this.$http.post("http://127.0.0.1:8000/contact/",
+                    {
+                        subject: "heeey",
+                        fullname: "fdgdf dfbvgdf",
+                        email: "toni@gmail.gom",
+                        text: "ikivnvdf dfbv "
+                    }
+                );
+
+
             },
-            checkIsValidForm() {
-                if(this.formData.fullname.length < 2) {
-                    return this.isInvalidForm = true;
-                }
-                if(emailValidator(this.formData.email) === null) {
-                    return this.isInvalidForm = true;
-                }
-                this.isInvalidForm = false;
-            }
+            // checkIsValidForm() {
+            //     if(this.formData.fullname.length < 2) {
+            //         return this.isInvalidForm = true;
+            //     }
+            //     if(emailValidator(this.formData.email) === null) {
+            //         return this.isInvalidForm = true;
+            //     }
+            //     this.isInvalidForm = false;
+            // }
         },
         components: {
             Navigation
