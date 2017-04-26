@@ -6,9 +6,11 @@ from django.views.decorators.csrf import csrf_protect
 from .forms import ContactForm
 import json
 
+
 def index_view(request):
 
     return render(request, 'index.html', {})
+
 
 @csrf_protect
 def contact_view(request):
