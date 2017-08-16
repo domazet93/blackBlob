@@ -1,29 +1,23 @@
 <template>
     <div id="navigation">
         <div class="row">
-            <h2>Hello world</h2>
-        </div>
-        <div class="row">
-            <p>Thinking of what to write in a greeting card can be hard work!</p>
-        </div>
-        <div class="row">
-            <img src="~images/avatar.png">
+            <img src="~images/me.jpg" class="avatar">
         </div>
         <nav class="navbar">
             <ul>
                 <li>
                     <router-link to="/">
-                        Home
+                        home
                     </router-link>
                 </li>
                 <li>
                     <router-link to="/blog">
-                        Blog
+                        blog
                     </router-link>
                 </li>
                 <li>
                     <router-link to="/contact">
-                        Contact
+                        contact
                     </router-link>
                 </li>
             </ul>

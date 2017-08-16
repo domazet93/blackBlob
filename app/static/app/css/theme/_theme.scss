@@ -67,7 +67,7 @@ SHARED
     }
 
     .border-light {
-        border: 1px solid #bbb;
+        border: 1px solid #bbb;    
     }
 
     .mb-2 {
@@ -89,6 +89,33 @@ SHARED
         text-align: center
     }
 
+
+/* -------------------------------------
+NAVIGATION
+------------------------------------- */
+    #navigation {
+        margin: 2em 0;
+        .avatar {
+            max-width: 100px;
+            border-radius: 50%;
+            -webkit-filter: grayscale(40%);
+            filter: grayscale(40%);
+        }
+        .navbar {
+            margin: 2em 0 4em;
+
+            ul {
+                li {
+                    margin-left: 1em;
+                }
+                li:first-child {
+                    margin-left: 0;
+                }
+            }
+        }
+    }
+
+
 /* -------------------------------------
 HOME
 ------------------------------------- */
@@ -96,6 +123,21 @@ HOME
     #home {
         .img-development {
             max-width:100%;
+        }
+        .portfolio-links {
+            img {
+                max-width: 25px;
+                margin-right: 10px;
+            } 
+            a {
+                margin: 10px 0;
+                width: 100%;
+                display: inline-block;
+                &:hover {
+                    color: #333;
+                    text-decoration: none;
+                }
+            }
         }
     }
 
@@ -140,18 +182,3 @@ BLOG
     }
 
 
-/* -------------------------------------
-FOOTER
-------------------------------------- */
-
-    #footer {
-        position: absolute;
-        bottom: 0;
-        text-align: center;
-    }
-
-    @media (max-width: 768px) {
-        #footer {
-            width: 100%;
-        }
-    }
