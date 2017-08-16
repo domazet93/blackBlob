@@ -2,11 +2,12 @@ from django.shortcuts import render
 from django.conf import settings
 from django.core.mail import send_mail
 from django.http import HttpResponse
-from django.views.decorators.csrf import csrf_protect
+from django.views.decorators.csrf import csrf_protect, ensure_csrf_cookie
 from .forms import ContactForm
 import json
 
 
+@ensure_csrf_cookie
 def index_view(request):
 
     return render(request, 'index.html', {})
