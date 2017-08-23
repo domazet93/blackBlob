@@ -11,6 +11,11 @@
                     </router-link>
                 </li>
                 <li>
+                    <router-link to="/projects">
+                        projects
+                    </router-link>
+                </li>
+                <li>
                     <router-link to="/blog">
                         blog
                     </router-link>

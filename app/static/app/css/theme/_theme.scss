@@ -89,6 +89,9 @@ SHARED
         text-align: center
     }
 
+    .underline {
+        text-decoration: underline;
+    }
 
 /* -------------------------------------
 NAVIGATION
@@ -193,3 +196,15 @@ BLOG
     }
 
 
+/* -------------------------------------
+PROJECTS
+------------------------------------- */
+
+    #projects {
+        .project-links {
+            img {
+                width: 250px; 
+                height: 200px;         
+            }        
+        }        
+    }
