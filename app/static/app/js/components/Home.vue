@@ -19,9 +19,11 @@
                     <img src="~images/development.svg" class="img-development">
                 </div>
 
-                <div class="col-md-4 border-light">
-                    <h2>First</h2>
-                    <p>I've tried this for both row, and span12, but my table inside span12, inside row always sits left. Adding padding moves it to the center, but I want to center it in a responsive way. Can I do auto padding somehow?</p>
+                <div class="col-md-4 border-light love-section">
+                    <img src="~images/heart.svg"><h4>IN LOVE WITH</h4>
+                    <p>Node.js, MongoDB, VueJS, Webpack, SASS, SVG</p><br />
+                    <img src="~images/search.svg"><h4>CURRENTLY RESEARCHING</h4>
+                    <p>Heroku, Django</p>
                 </div>
             </div>
             <div class="row">
