@@ -24,10 +24,10 @@ def contact_view(request):
         form = ContactForm(data)
 
         content = u'{}\n\n{}'.format(
-            data['fullname'],
-            data['text']
-        )
-
+            'Fullname: ' + data['fullname'],
+            'Email: ' + data['email'],
+            data['msg']
+        ) 
         if form.is_valid():
             send_mail(
                 data['subject'],

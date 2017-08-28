@@ -123,7 +123,12 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+# EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 USER_EMAIL = ENV_STR('USER_EMAIL')
 
+EMAIL_HOST = ENV_STR('EMAIL_HOST')
+EMAIL_HOST_USER = ENV_STR('EMAIL_HOST_USER')
+EMAIL_HOST_PASSWORD = ENV_STR('EMAIL_HOST_PASSWORD')
+EMAIL_PORT = int(ENV_STR('EMAIL_PORT'))
+EMAIL_USE_TLS = ENV_BOOL('EMAIL_USE_TLS')
