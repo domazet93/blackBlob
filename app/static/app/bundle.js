@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "/static/app/";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 38);
+/******/ 	return __webpack_require__(__webpack_require__.s = 40);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -131,7 +131,7 @@ var Component = __webpack_require__(0)(
   /* script */
   __webpack_require__(7),
   /* template */
-  __webpack_require__(29),
+  __webpack_require__(31),
   /* scopeId */
   null,
   /* cssModules */
@@ -169,15 +169,15 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.router = undefined;
 
-var _vueRouter = __webpack_require__(34);
+var _vueRouter = __webpack_require__(36);
 
 var _vueRouter2 = _interopRequireDefault(_vueRouter);
 
-var _vueResource = __webpack_require__(33);
+var _vueResource = __webpack_require__(35);
 
 var _vueResource2 = _interopRequireDefault(_vueResource);
 
-var _vueCookie = __webpack_require__(21);
+var _vueCookie = __webpack_require__(23);
 
 var _vueCookie2 = _interopRequireDefault(_vueCookie);
 
@@ -185,7 +185,7 @@ var _routes = __webpack_require__(9);
 
 var _routes2 = _interopRequireDefault(_routes);
 
-var _App = __webpack_require__(22);
+var _App = __webpack_require__(24);
 
 var _App2 = _interopRequireDefault(_App);
 
@@ -210,7 +210,7 @@ new Vue({
     template: "<App/>",
     components: { App: _App2.default }
 });
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(35)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(37)))
 
 /***/ }),
 /* 3 */
@@ -239,6 +239,11 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Navigation__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Navigation___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__Navigation__);
+//
+//
+//
+//
+//
 //
 //
 //
@@ -340,12 +345,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             // if(this.checkIsValidForm()) {
 
             // }
-            this.$http.post("http://127.0.0.1:8000/contact/", {
-                subject: "heeey",
-                fullname: "fdgdf dfbvgdf",
-                email: "toni@gmail.gom",
-                text: "ikivnvdf dfbv "
-            });
+            this.$http.post("http://127.0.0.1:8000/contact/", this.formData);
         }
     },
     components: {
@@ -362,6 +362,16 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Navigation__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Navigation___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__Navigation__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -543,6 +553,22 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 
@@ -575,19 +601,19 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 
-var _Home = __webpack_require__(25);
+var _Home = __webpack_require__(27);
 
 var _Home2 = _interopRequireDefault(_Home);
 
-var _Blog = __webpack_require__(23);
+var _Blog = __webpack_require__(25);
 
 var _Blog2 = _interopRequireDefault(_Blog);
 
-var _Contact = __webpack_require__(24);
+var _Contact = __webpack_require__(26);
 
 var _Contact2 = _interopRequireDefault(_Contact);
 
-var _Projects = __webpack_require__(26);
+var _Projects = __webpack_require__(28);
 
 var _Projects2 = _interopRequireDefault(_Projects);
 
@@ -636,34 +662,46 @@ module.exports = __webpack_require__.p + "images/github.ico";
 /* 14 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "images/linkedin.png";
+module.exports = __webpack_require__.p + "images/heart.svg";
 
 /***/ }),
 /* 15 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "images/mb_scheme.png";
+module.exports = __webpack_require__.p + "images/linkedin.png";
 
 /***/ }),
 /* 16 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "images/me.jpg";
+module.exports = __webpack_require__.p + "images/mb_scheme.png";
 
 /***/ }),
 /* 17 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "images/phone_flickOn.png";
+module.exports = __webpack_require__.p + "images/me.jpg";
 
 /***/ }),
 /* 18 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "images/stackoverflow.png";
+module.exports = __webpack_require__.p + "images/phone_flickOn.png";
 
 /***/ }),
 /* 19 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "images/search.svg";
+
+/***/ }),
+/* 20 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "images/stackoverflow.png";
+
+/***/ }),
+/* 21 */
 /***/ (function(module, exports) {
 
 // shim for using process in browser
@@ -853,7 +891,7 @@ process.umask = function() { return 0; };
 
 
 /***/ }),
-/* 20 */
+/* 22 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -1015,7 +1053,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
 
 
 /***/ }),
-/* 21 */
+/* 23 */
 /***/ (function(module, exports, __webpack_require__) {
 
 (function () {
@@ -1024,7 +1062,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
             isFinite(value) &&
             Math.floor(value) === value;
     };
-    var Cookie = __webpack_require__(20);
+    var Cookie = __webpack_require__(22);
 
     var VueCookie = {
 
@@ -1066,14 +1104,14 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
 
 
 /***/ }),
-/* 22 */
+/* 24 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var Component = __webpack_require__(0)(
   /* script */
   __webpack_require__(3),
   /* template */
-  __webpack_require__(32),
+  __webpack_require__(34),
   /* scopeId */
   null,
   /* cssModules */
@@ -1100,14 +1138,14 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 23 */
+/* 25 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var Component = __webpack_require__(0)(
   /* script */
   __webpack_require__(4),
   /* template */
-  __webpack_require__(30),
+  __webpack_require__(32),
   /* scopeId */
   null,
   /* cssModules */
@@ -1134,14 +1172,14 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 24 */
+/* 26 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var Component = __webpack_require__(0)(
   /* script */
   __webpack_require__(5),
   /* template */
-  __webpack_require__(31),
+  __webpack_require__(33),
   /* scopeId */
   null,
   /* cssModules */
@@ -1168,14 +1206,14 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 25 */
+/* 27 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var Component = __webpack_require__(0)(
   /* script */
   __webpack_require__(6),
   /* template */
-  __webpack_require__(28),
+  __webpack_require__(30),
   /* scopeId */
   null,
   /* cssModules */
@@ -1202,14 +1240,14 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 26 */
+/* 28 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var Component = __webpack_require__(0)(
   /* script */
   __webpack_require__(8),
   /* template */
-  __webpack_require__(27),
+  __webpack_require__(29),
   /* scopeId */
   null,
   /* cssModules */
@@ -1236,7 +1274,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 27 */
+/* 29 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -1267,7 +1305,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   }, [_c('img', {
     attrs: {
-      "src": __webpack_require__(15)
+      "src": __webpack_require__(16)
     }
   }), _vm._v(" "), _c('h4', [_vm._v("MusicBox")])])]), _vm._v(" "), _c('div', {
     staticClass: "col-md-4"
@@ -1301,7 +1339,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   }, [_c('img', {
     attrs: {
-      "src": __webpack_require__(17)
+      "src": __webpack_require__(18)
     }
   }), _vm._v(" "), _c('h4', [_vm._v("Flick On Football (Personal Project)")])])])]), _vm._v(" "), (_vm.projectName === 'musicbox') ? _c('div', {
     staticClass: "row"
@@ -1321,29 +1359,53 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "col-md-8"
   }, [_c('h4', {
     staticClass: "underline"
-  }, [_vm._v("Project Descriprion")]), _vm._v(" "), _c('p', [_vm._v("MusicBox is a music streaming service with a specific focus on cafes, restaurants, stores and similar venues."), _c('br'), _c('br'), _vm._v("\n                    Musicbox is Single Page App and my job was to replace and separate old UI into "), _c('strong', [_vm._v("mobile")]), _vm._v(" and "), _c('strong', [_vm._v("full (desktop)")]), _vm._v(" UI using BackboneJS. BackboneJS helped in structuring app into the models and views."), _c('br'), _c('br'), _vm._v("\n                    Template is served through Django and app has many Ionic classes for styling components.\n                    Desktop UI come after mobile UI and we give a try to Vue2Js. App is divided into the components and with help of Vuex library they all share data."), _c('br'), _c('br'), _vm._v("\n                    Webpack is used to bundle and minify output file. No tests on frontend side.\n                    Backend is written in Go and Python (Django framework) so I'm familiar with Django structure and "), _c('strong', [_vm._v("Swagger")]), _vm._v(" to see structure of API and outputs for each endpoint.\n                ")])])
+  }, [_vm._v("Project Descriprion")]), _vm._v(" "), _c('p', [_vm._v("MusicBox is a music streaming service with a specific focus on cafes, restaurants, stores and similar venues."), _c('br'), _c('br'), _vm._v("\n                    Musicbox is Single Page App and my job was to replace and separate old UI into "), _c('strong', [_vm._v("mobile")]), _vm._v(" and "), _c('strong', [_vm._v("full (desktop)")]), _vm._v(" UI using BackboneJS. BackboneJS helped in structuring app into the models and views."), _c('br'), _c('br'), _vm._v("\n                    Template is served through Django and app has many "), _c('strong', [_vm._v("Ionic")]), _vm._v(" classes for styling components.\n                    Desktop UI come after mobile UI and we give a try to Vue2Js. App is divided into the components and with help of Vuex library they all share data."), _c('br'), _c('br'), _vm._v("\n                    Webpack is used to bundle and minify output file. No tests on frontend side.\n                    Backend is written in Go and Python (Django framework) so I'm familiar with Django structure and "), _c('strong', [_vm._v("Swagger")]), _vm._v(" to see structure of API and outputs for each endpoint.\n                ")])])
 },function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: "col-md-4"
   }, [_c('h4', {
     staticClass: "underline"
-  }, [_vm._v("Technologies")]), _vm._v(" "), _c('p', [_c('strong', [_vm._v("Programming languages:")]), _vm._v(" Javascript, Python")]), _vm._v(" "), _c('p', [_c('strong', [_vm._v("Web frameworks:")]), _vm._v(" BackboneJS, Vue2, Ionic")]), _vm._v(" "), _c('p', [_c('strong', [_vm._v("Build tools:")]), _vm._v(" webpack")])])
+  }, [_vm._v("Technologies")]), _vm._v(" "), _c('p', [_c('strong', [_vm._v("Programming languages:")]), _vm._v(" Javascript, Python")]), _vm._v(" "), _c('p', [_c('strong', [_vm._v("Web frameworks:")]), _vm._v(" BackboneJS, Vue2, Ionic")]), _vm._v(" "), _c('p', [_c('strong', [_vm._v("Build tools:")]), _vm._v(" webpack")]), _vm._v(" "), _c('a', {
+    attrs: {
+      "href": "https://musicbox.com.hr/"
+    }
+  }, [_vm._v("VIEW PROJECT ONLINE >")])])
 },function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
-    staticClass: "col-md-6"
-  }, [_c('h4', [_vm._v("Project Descriprion")])])
+    staticClass: "col-md-8"
+  }, [_c('h4', {
+    staticClass: "underline"
+  }, [_vm._v("Project Descriprion")]), _vm._v(" "), _c('p', [_vm._v("Wi-Fi powered by local community.")]), _vm._v(" "), _c('p', [_vm._v("My focus was to create frontend part of the app. This isn't a single page app, instead there are many templates served by Django. "), _c('br'), _c('br'), _vm._v("\n                  Client only ask for spash page, getting-started workflow and templates for managing account (we choosed "), _c('a', {
+    attrs: {
+      "href": "https://github.com/pennersr/django-allauth/"
+    }
+  }, [_vm._v("django-allauth")]), _vm._v(")."), _c('br'), _vm._v(" I worked with "), _c('strong', [_vm._v("Angular 4")]), _vm._v(" and project was generated with a help of "), _c('strong', [_vm._v("angular-cli")]), _vm._v(". Config file has multiple apps and every template has inline, scripts and main bundle file.")])])
 },function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
-    staticClass: "col-md-6"
-  }, [_c('h4', [_vm._v("Technologies")])])
+    staticClass: "col-md-4"
+  }, [_c('h4', {
+    staticClass: "underline"
+  }, [_vm._v("Technologies")]), _vm._v(" "), _c('p', [_c('strong', [_vm._v("Programming languages:")]), _vm._v(" Javascript, Python, SASS")]), _vm._v(" "), _c('p', [_c('strong', [_vm._v("Web frameworks:")]), _vm._v(" Angular 4")]), _vm._v(" "), _c('p', [_c('strong', [_vm._v("Build tools:")]), _vm._v(" Angular CLI, webpack")]), _vm._v(" "), _c('a', {
+    attrs: {
+      "href": "https://andrena.tech/"
+    }
+  }, [_vm._v("VIEW PROJECT ONLINE >")])])
 },function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
-    staticClass: "col-md-6"
-  }, [_c('h4', [_vm._v("Project Descriprion")])])
+    staticClass: "col-md-8"
+  }, [_c('h4', {
+    staticClass: "underline"
+  }, [_vm._v("Project Descriprion")]), _vm._v("\n                Flick On Football is community for football players. They can create or join the match, chat with teams and earn reputation.\n\n                "), _c('p', [_vm._v("This is SPA app and it's completly done by myself. Frontend part use Vue2. Project is separated into the single file components, loaded through router, and they all can share data and have access to the "), _c('strong', [_vm._v("vuex store object")]), _vm._v("."), _c('br'), _c('br'), _vm._v(" "), _c('strong', [_vm._v("Node.js (Koa) ")]), _vm._v(" and "), _c('strong', [_vm._v("MongoDB")]), _vm._v(" is used for backend."), _c('br'), _c('br'), _vm._v("\n                Currently I work with "), _c('strong', [_vm._v("Cordova")]), _vm._v(" and "), _c('strong', [_vm._v("Android SDK")]), _vm._v(" to build Android apk from existing JS code.\n                ")])])
 },function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
-    staticClass: "col-md-6"
-  }, [_c('h4', [_vm._v("Technologies")])])
+    staticClass: "col-md-4"
+  }, [_c('h4', {
+    staticClass: "underline"
+  }, [_vm._v("Technologies")]), _vm._v(" "), _c('p', [_c('strong', [_vm._v("Programming languages:")]), _vm._v(" Javascript / Node.js")]), _vm._v(" "), _c('p', [_c('strong', [_vm._v("Web frameworks:")]), _vm._v(" Vue2, Koa2, Socket.io")]), _vm._v(" "), _c('p', [_c('strong', [_vm._v("Build tools:")]), _vm._v(" webpack, Cordova")]), _vm._v(" "), _c('a', {
+    attrs: {
+      "href": "https://www.flickonfootball.com/"
+    }
+  }, [_vm._v("VIEW PROJECT ONLINE >")])])
 }]}
 module.exports.render._withStripped = true
 if (false) {
@@ -1354,7 +1416,7 @@ if (false) {
 }
 
 /***/ }),
-/* 28 */
+/* 30 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -1375,8 +1437,16 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('div', {
     staticClass: "row mb-2"
   }, [_c('div', {
-    staticClass: "col-md-4 border-light mb-2"
-  }, [_c('h2', [_vm._v("First")]), _vm._v(" "), _c('p', [_vm._v("I've tried this for both row, and span12, but my table inside span12, inside row always sits left. Adding padding moves it to the center, but I want to center it in a responsive way."), _c('br'), _c('br'), _vm._v("\n\n                    Can I do auto padding somehow?I've tried this for both row, and span12, but my table inside span12, inside row always sits left. Adding padding moves it to the center, but I want to center it in a responsive way. Can I do auto padding somehow")])]), _vm._v(" "), _c('div', {
+    staticClass: "col-md-4 border-light mb-2 "
+  }, [_c('h2', [_vm._v("Employment History")]), _vm._v(" "), _c('p', [_c('span', [_vm._v("Frontend developer @")]), _c('br'), _vm._v(" "), _c('a', {
+    attrs: {
+      "href": "http://goodcode.io/"
+    }
+  }, [_vm._v("Goodcode")]), _c('br'), _vm._v(" "), _c('span', [_vm._v("August 2016 - September 2017")]), _c('br'), _vm._v(" "), _c('span', [_vm._v("Zagreb, Croatia")]), _c('br'), _c('br')]), _vm._v(" "), _c('p', [_c('span', [_vm._v("Frontend developer (Intern) @")]), _c('br'), _vm._v(" "), _c('a', {
+    attrs: {
+      "href": "https://www.morris-chapman.com/"
+    }
+  }, [_vm._v("Morris & Chapman")]), _c('br'), _vm._v(" "), _c('span', [_vm._v("March 2015 - August 2015")]), _c('br'), _vm._v(" "), _c('span', [_vm._v("Brussels, Belgium")]), _c('br')])]), _vm._v(" "), _c('div', {
     staticClass: "col-md-4 text-center mb-2"
   }, [_c('img', {
     staticClass: "img-development",
@@ -1387,17 +1457,17 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "col-md-4 border-light love-section"
   }, [_c('img', {
     attrs: {
-      "src": __webpack_require__(39)
+      "src": __webpack_require__(14)
     }
-  }), _c('h4', [_vm._v("IN LOVE WITH")]), _vm._v(" "), _c('p', [_vm._v("Node.js, MongoDB, VueJS, Webpack, SASS, SVG")]), _c('br'), _vm._v(" "), _c('img', {
+  }), _c('h4', [_vm._v("LOVE WORK WITH")]), _vm._v(" "), _c('p', [_vm._v("Node.js, MongoDB, VueJS, Webpack, SASS, SVG")]), _c('br'), _vm._v(" "), _c('img', {
     attrs: {
-      "src": __webpack_require__(40)
+      "src": __webpack_require__(19)
     }
   }), _c('h4', [_vm._v("CURRENTLY RESEARCHING")]), _vm._v(" "), _c('p', [_vm._v("Heroku, Django")])])]), _vm._v(" "), _c('div', {
     staticClass: "row"
   }, [_c('div', {
-    staticClass: "col-md-4 border-light mb-2 "
-  }, [_c('h2', [_vm._v("First")]), _vm._v(" "), _c('p', [_vm._v("I've tried this for both row, and span12, but my table inside span12, inside row always sits left. Adding padding moves it to the center, but I want to center it in a responsive way. Can I do auto padding somehow?")])]), _vm._v(" "), _c('div', {
+    staticClass: "col-md-4 border-light mb-2"
+  }, [_c('h2', [_vm._v("Overview")]), _vm._v(" "), _c('p', [_vm._v("I'm Toni Domazet, Javascript developer with almost 2 years experience in developing web apps."), _c('br'), _c('br'), _vm._v("\n                    I have a bachelor's degree in IT Engineering. "), _c('br'), _c('br'), _vm._v(" I'm passionate, self-motivated person and active member of local Javascript community.\n                    ")])]), _vm._v(" "), _c('div', {
     staticClass: "col-md-4 col-md-offset-4 portfolio-links border-light"
   }, [_c('h2', [_vm._v("Links")]), _vm._v(" "), _c('a', {
     attrs: {
@@ -1415,7 +1485,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   }, [_c('img', {
     attrs: {
-      "src": __webpack_require__(18)
+      "src": __webpack_require__(20)
     }
   }), _vm._v(" stackoverflow")]), _vm._v(" "), _c('a', {
     attrs: {
@@ -1424,7 +1494,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   }, [_c('img', {
     attrs: {
-      "src": __webpack_require__(14)
+      "src": __webpack_require__(15)
     }
   }), _vm._v("linkedin")])])])])
 }]}
@@ -1437,7 +1507,7 @@ if (false) {
 }
 
 /***/ }),
-/* 29 */
+/* 31 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -1470,7 +1540,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('img', {
     staticClass: "avatar",
     attrs: {
-      "src": __webpack_require__(16)
+      "src": __webpack_require__(17)
     }
   })])
 }]}
@@ -1483,7 +1553,7 @@ if (false) {
 }
 
 /***/ }),
-/* 30 */
+/* 32 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -1502,8 +1572,16 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('div', {
     staticClass: "row"
   }, [_c('div', {
-    staticClass: "col-md-4 col-md-offset-4"
-  }, [_vm._v("\n                    Blog\n            ")])])])
+    staticClass: "col-md-12 "
+  }, [_c('h2', [_vm._v("Blog")])])]), _vm._v(" "), _c('div', {
+    staticClass: "row"
+  }, [_c('div', {
+    staticClass: "col-md-12 "
+  }, [_c('a', {
+    attrs: {
+      "href": "https://medium.com/@toni.domaz93/football-community-app-b26ac4b6c1c1"
+    }
+  }, [_vm._v("Football Community App")])])])])
 }]}
 module.exports.render._withStripped = true
 if (false) {
@@ -1514,7 +1592,7 @@ if (false) {
 }
 
 /***/ }),
-/* 31 */
+/* 33 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -1571,8 +1649,8 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     directives: [{
       name: "model",
       rawName: "v-model",
-      value: (_vm.formData.name),
-      expression: "formData.name"
+      value: (_vm.formData.fullname),
+      expression: "formData.fullname"
     }],
     attrs: {
       "type": "text",
@@ -1580,12 +1658,12 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "id": "fullname"
     },
     domProps: {
-      "value": (_vm.formData.name)
+      "value": (_vm.formData.fullname)
     },
     on: {
       "input": function($event) {
         if ($event.target.composing) { return; }
-        _vm.formData.name = $event.target.value
+        _vm.formData.fullname = $event.target.value
       }
     }
   }), _vm._v(" "), _c('label', {
@@ -1616,7 +1694,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "col-md-8 contact-body"
   }, [_c('label', {
     attrs: {
-      "for": "message"
+      "for": "msg"
     }
   }, [_vm._v("Message")]), _vm._v(" "), _c('textarea', {
     directives: [{
@@ -1626,8 +1704,8 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       expression: "formData.msg"
     }],
     attrs: {
-      "name": "message",
-      "id": "message",
+      "name": "msg",
+      "id": "msg",
       "rows": "9"
     },
     domProps: {
@@ -1665,7 +1743,7 @@ if (false) {
 }
 
 /***/ }),
-/* 32 */
+/* 34 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -1686,7 +1764,7 @@ if (false) {
 }
 
 /***/ }),
-/* 33 */
+/* 35 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2788,7 +2866,7 @@ var xhrClient = function (request) {
 
 var nodeClient = function (request) {
 
-    var client = __webpack_require__(37);
+    var client = __webpack_require__(39);
 
     return new PromiseObj(function (resolve) {
 
@@ -3264,7 +3342,7 @@ if (typeof window !== 'undefined' && window.Vue) {
 
 
 /***/ }),
-/* 34 */
+/* 36 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -5775,10 +5853,10 @@ if (inBrowser && window.Vue) {
 
 /* harmony default export */ __webpack_exports__["default"] = (VueRouter);
 
-/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(19)))
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(21)))
 
 /***/ }),
-/* 35 */
+/* 37 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(global) {/*!
@@ -15860,10 +15938,10 @@ return Vue$3;
 
 })));
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(36)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(38)))
 
 /***/ }),
-/* 36 */
+/* 38 */
 /***/ (function(module, exports) {
 
 var g;
@@ -15890,30 +15968,18 @@ module.exports = g;
 
 
 /***/ }),
-/* 37 */
+/* 39 */
 /***/ (function(module, exports) {
 
 /* (ignored) */
 
 /***/ }),
-/* 38 */
+/* 40 */
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(2);
 module.exports = __webpack_require__(2);
 
-
-/***/ }),
-/* 39 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "images/heart.svg";
-
-/***/ }),
-/* 40 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "images/search.svg";
 
 /***/ })
 /******/ ]);
