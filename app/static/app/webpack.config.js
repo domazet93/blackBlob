@@ -18,11 +18,13 @@ module.exports = {
         rules: [
             {
                 test: /\.js$/,
-                exclude: [/node_modules/],
-                use: [{
+                exclude: /node_modules/,
+                use: {
                     loader: "babel-loader",
-                    options: { presets: ["es2015"] }
-                }]
+                    options: {
+                        presets: [ "es2015" ]
+                    }
+                }                
             },
             {
                 test: /\.vue$/,
@@ -58,14 +60,10 @@ module.exports = {
     resolve: {
         extensions: [".js", ".vue"],
         alias: {
-            "vue$": "vue/dist/vue.js",
+            "vue$": "vue/dist/vue.common.js",
             "@": path.resolve(__dirname, "js"),
             "images": path.resolve(__dirname, "images")
         }
     },
-    watch: true,
-    watchOptions: {
-        aggregateTimeout: 30,
-        poll: 100
-    }
+    watch: true
 };

@@ -130,7 +130,7 @@ CORS_ORIGIN_ALLOW_ALL =  ENV_BOOL('CORS_ORIGIN_ALLOW_ALL')
 STATIC_URL = '/static/'
 STATIC_ROOT = BASE_DIR + '/static/'
 
-# EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+#EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 USER_EMAIL = ENV_STR('USER_EMAIL')
 
