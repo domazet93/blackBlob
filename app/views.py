@@ -22,10 +22,9 @@ def contact_view(request):
         data = json.loads(body_unicode)
 
         form = ContactForm(data)
-
+        
         content = u'{}\n\n{}'.format(
-            'Fullname: ' + data['fullname'],
-            'Email: ' + data['email'],
+            'Fullname: ' + data['fullname'] + ', Email: ' + data['email'],
             data['msg']
         )
         if form.is_valid():
