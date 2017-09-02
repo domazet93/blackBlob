@@ -2,7 +2,7 @@ from django.shortcuts import render
 from django.conf import settings
 from django.core.mail import send_mail
 from django.http import HttpResponse
-from django.views.decorators.csrf import csrf_protect, ensure_csrf_cookie
+from django.views.decorators.csrf import csrf_exempt, ensure_csrf_cookie
 from .forms import ContactForm
 import json
 
@@ -13,7 +13,7 @@ def index_view(request):
     return render(request, 'index.html', {})
 
 
-@csrf_protect
+@csrf_exempt
 def contact_view(request):
 
     if request.method == 'POST':
