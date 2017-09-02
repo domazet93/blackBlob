@@ -11,9 +11,6 @@
                     <h2>Contact</h2>
                     <div class="row">
                         <div class="col-md-4 contact-body">
-                            <div class="alert alert-danger" v-if="isInvalidForm">
-                                <span>Form is not valid</span>
-                            </div>
                             <label for="subject">Subject</label>
                             <input type="text" name="subject" id="subject" v-model="formData.subject">
 
@@ -34,6 +31,10 @@
         <div class="row">
             <div class="col-md-4 contact-body">
                 <input type="button" class="btn" value="Get in touch" @click="onSubmit()">
+                <div v-if="isInvalidForm" class="error">
+                    <p>Invalid form</p>
+                    <a href="#" class="close-btn" @click.prevent="isInvalidForm=false"><img src="~images/close.svg"></a>
+                </div>
             </div>
         </div>
     </div>
@@ -53,27 +54,33 @@
                     msg: ""
                 },
                 emailValidator,
-                isInvalidForm: false
+                isInvalidForm: false,
+                URLstring: ""
             };
         },
         methods: {
             onSubmit() {
-                // if(this.checkIsValidForm()) {
-
-                // }
-                this.$http.post("http://127.0.0.1:8000/contact/", this.formData);
-
-
+                if(this.checkIsValidForm()) {
+                    this.setURLString();
+                    this.$http.post(`${this.URLstring}/contact/`, this.formData);
+                }
             },
-            // checkIsValidForm() {
-            //     if(this.formData.fullname.length < 2) {
-            //         return this.isInvalidForm = true;
-            //     }
-            //     if(emailValidator(this.formData.email) === null) {
-            //         return this.isInvalidForm = true;
-            //     }
-            //     this.isInvalidForm = false;
-            // }
+            setURLString() {
+                if(process.env.NODE_ENV === "development") {
+                    this.URLstring = `${config.ROOT_URL}:${config.PORT}`;
+                } else if(process.env.NODE_ENV === "production") {
+                    this.URLstring = config.ROOT_URL;
+                }
+            },
+            checkIsValidForm() {
+                if(this.formData.fullname.length < 2) {
+                    return this.isInvalidForm = true;
+                }
+                if(emailValidator(this.formData.email) === null) {
+                    return this.isInvalidForm = true;
+                }
+                this.isInvalidForm = false;
+            }
         },
         components: {
             Navigation
