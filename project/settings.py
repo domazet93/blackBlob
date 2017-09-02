@@ -119,9 +119,10 @@ USE_TZ = True
 # CSRF_HEADER_NAME = 'X-XSRF-TOKEN'
 
 # Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/1.11/howto/static-files/
+# https://docs.djangoproject.com/en/1.10/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_ROOT = BASE_DIR + '/static/'
 
 # EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
