@@ -66,7 +66,7 @@
     <g
        id="g4194"
        transform="matrix(0.14411309,0,0,0.14411309,120.55794,186.64886)"
-       style="fill:#c33a3a;fill-opacity:1">
+       style="fill:#333333;fill-opacity:1">
       <rect
          transform="matrix(0.89359698,0.44887017,-0.55292403,0.83323167,0,0)"
          ry="3.7116847"
@@ -75,7 +75,7 @@
          height="68.294998"
          width="7.9558291"
          id="rect4138"
-         style="fill:#c33a3a;fill-opacity:1;stroke:none;stroke-opacity:1" />
+         style="fill:#333333;fill-opacity:1;stroke:none;stroke-opacity:1" />
       <rect
          transform="matrix(-0.89359698,0.44887017,0.55292403,0.83323167,0,0)"
          ry="3.7116847"
@@ -84,7 +84,7 @@
          height="68.294998"
          width="7.9558291"
          id="rect4138-7"
-         style="fill:#c33a3a;fill-opacity:1;stroke:none;stroke-opacity:1" />
+         style="fill:#333333;fill-opacity:1;stroke:none;stroke-opacity:1" />
     </g>
   </g>
 </svg>
