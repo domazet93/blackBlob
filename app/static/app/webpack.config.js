@@ -1,6 +1,13 @@
 var webpack = require("webpack"),
     path = require("path");
 
+
+function resolve(dir) {
+    return path.join("../../../", dir);
+}
+
+let Config = require(path.join(resolve(""), "./config"));
+
 module.exports = {
     entry: "./js/app.js",
     output: {
@@ -40,6 +47,12 @@ module.exports = {
     plugins : [
         new webpack.ProvidePlugin({
             Vue: "vue"
+        }),
+        new webpack.DefinePlugin({
+            "process.env": {
+                "NODE_ENV": JSON.stringify(process.env.NODE_ENV)
+            },          
+            "config": JSON.stringify(new Config())
         })
     ],
     resolve: {
