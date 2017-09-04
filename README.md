@@ -25,3 +25,21 @@ Run the migrations:
 Run development server:
 
     python manage.py runserver
+
+## Frontend build
+
+Navigate to the frontend directory:
+
+    cd app/static/app
+
+Install dependencies:
+
+    npm install
+
+Run build for development:
+
+    npm run dev
+
+Run build for production:
+
+    npm run prod
