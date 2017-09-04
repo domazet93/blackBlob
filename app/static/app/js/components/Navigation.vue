@@ -1,5 +1,5 @@
 <template>
-    <div id="navigation">
+    <div class="navigation">
         <div class="row">
             <img src="~images/me.jpg" class="avatar">
         </div>

@@ -2,3 +2,4 @@
 *.sqlite3
 *.env
 /app/static/app/node_modules
+Pipfile

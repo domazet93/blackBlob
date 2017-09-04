@@ -80,81 +80,81 @@ body {
 /* -------------------------------------
 NAVIGATION
 ------------------------------------- */
-#navigation {
+.navigation {
   margin: 2em 0; }
-  #navigation .avatar {
+  .navigation .avatar {
     max-width: 100px;
     border-radius: 50%;
     -webkit-filter: grayscale(40%);
     filter: grayscale(40%); }
-  #navigation .navbar {
+  .navigation .navbar {
     margin: 2em 0 4em; }
-    #navigation .navbar ul li {
+    .navigation .navbar ul li {
       margin-left: 1em; }
-    #navigation .navbar ul li:first-child {
+    .navigation .navbar ul li:first-child {
       margin-left: 0; }
 
 /* -------------------------------------
 HOME
 ------------------------------------- */
-#home .img-development {
+.home .img-development {
   max-width: 100%; }
 
-#home .portfolio-links img {
+.home .portfolio-links img {
   max-width: 25px;
   margin-right: 10px; }
 
-#home .portfolio-links a {
+.home .portfolio-links a {
   margin: 10px 0;
   width: 100%;
   display: inline-block; }
-  #home .portfolio-links a:hover {
+  .home .portfolio-links a:hover {
     color: #333;
     text-decoration: none; }
 
-#home .love-section {
+.home .love-section {
   padding: 18px; }
-  #home .love-section h4 {
+  .home .love-section h4 {
     display: inline;
     margin: 0 5px; }
-  #home .love-section p {
+  .home .love-section p {
     margin: 0 30px;
     width: 60%; }
 
 /* -------------------------------------
 CONTACT
 ------------------------------------- */
-#contact {
+.contact {
   margin: 0 auto;
   display: block; }
-  #contact .btn {
+  .contact .btn {
     background-color: #333;
     color: #fff; }
-  #contact .contact-body input {
+  .contact .contact-body input {
     padding: 10px 0; }
-  #contact .contact-body input, #contact .contact-body textarea {
+  .contact .contact-body input, .contact .contact-body textarea {
     border-radius: 3px;
     border: 1px solid #bbb;
     margin-bottom: 10px;
     text-indent: 10px;
     width: 100%; }
-  #contact .contact-body textarea {
+  .contact .contact-body textarea {
     max-width: 100%;
     padding-bottom: 12px;
     resize: none; }
-  #contact .contact-body .alert {
+  .contact .contact-body .alert {
     position: relative;
     color: #fff;
     border-radius: 3px;
     padding: 5px 0;
     text-align: center; }
-    #contact .contact-body .alert .close-btn {
+    .contact .contact-body .alert .close-btn {
       position: absolute;
       top: 10px;
       right: 10px; }
-  #contact .contact-body .error {
+  .contact .contact-body .error {
     background: #c33a3a; }
-  #contact .contact-body .success {
+  .contact .contact-body .success {
     background: #3ac36d; }
 
 /* -------------------------------------
@@ -163,6 +163,6 @@ BLOG
 /* -------------------------------------
 PROJECTS
 ------------------------------------- */
-#projects .project-links img {
+.projects .project-links img {
   width: 250px;
   height: 200px; }

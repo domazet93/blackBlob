@@ -98,7 +98,7 @@ SHARED
 /* -------------------------------------
 NAVIGATION
 ------------------------------------- */
-    #navigation {
+    .navigation {
         margin: 2em 0;
         .avatar {
             max-width: 100px;
@@ -125,7 +125,7 @@ NAVIGATION
 HOME
 ------------------------------------- */
 
-    #home {
+    .home {
         .img-development {
             max-width:100%;
         }
@@ -162,7 +162,7 @@ HOME
 CONTACT
 ------------------------------------- */
 
-    #contact {
+    .contact {
         .btn {
             background-color: $primary-color;
             color:#fff;
@@ -211,7 +211,7 @@ CONTACT
 BLOG
 ------------------------------------- */
 
-    #blog {
+    .blog {
     
     }
 
@@ -220,7 +220,7 @@ BLOG
 PROJECTS
 ------------------------------------- */
 
-    #projects {
+    .projects {
         .project-links {
             img {
                 width: 250px; 
