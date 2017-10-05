@@ -38,7 +38,7 @@
                 <div class="row">
                      <div class="col-md-4 border-light mb-2">
                         <h2>Overview</h2>
-                        <p>I'm Toni Domazet, Javascript developer with almost 2 years experience in developing web apps.<br /><br />
+                        <p>I'm Toni Domazet, Javascript developer with 2 years experience in developing web apps.<br /><br />
                         I have a bachelor's degree in IT Engineering. <br /><br /> I'm passionate, self-motivated person and active member of local Javascript community.
                         </p>
                     </div>
