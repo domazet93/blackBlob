@@ -32,7 +32,7 @@
                         <img src="~images/heart.svg"><h4>LOVE WORK WITH</h4>
                         <p>Node.js, MongoDB, VueJS, Webpack, SASS, SVG</p><br />
                         <img src="~images/search.svg"><h4>CURRENTLY RESEARCHING</h4>
-                        <p>Heroku, Django</p>
+                        <p>Angular, TypeScript</p>
                     </div>
                 </div>
                 <div class="row">

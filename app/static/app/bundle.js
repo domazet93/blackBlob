@@ -1214,7 +1214,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     attrs: {
       "src": __webpack_require__(21)
     }
-  }), _c('h4', [_vm._v("CURRENTLY RESEARCHING")]), _vm._v(" "), _c('p', [_vm._v("Heroku, Django")])])]), _vm._v(" "), _c('div', {
+  }), _c('h4', [_vm._v("CURRENTLY RESEARCHING")]), _vm._v(" "), _c('p', [_vm._v("Angular, TypeScript")])])]), _vm._v(" "), _c('div', {
     staticClass: "row"
   }, [_c('div', {
     staticClass: "col-md-4 border-light mb-2"
