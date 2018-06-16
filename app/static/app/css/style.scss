@@ -1,9 +1,6 @@
-/* -------------------------------------
-DEPENDENCIES
-------------------------------------- */
-
-
-/* -------------------------------------
-THEME
-------------------------------------- */
-@import "theme/theme";
+@import "components/contacts";
+@import "components/home";
+@import "components/navigation";
+@import "components/projects";
+@import "components/theme";
+ 

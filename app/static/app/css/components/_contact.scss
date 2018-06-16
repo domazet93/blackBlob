@@ -1,0 +1,47 @@
+/* -------------------------------------
+CONTACT
+------------------------------------- */
+
+.contact {
+    .btn {
+        background-color: $primary-color;
+        color:#fff;
+    }
+    .contact-body {
+        input {
+            padding:10px 0
+        }
+        input, textarea {
+            border-radius: 3px;
+            border:1px solid #bbb;
+            margin-bottom:10px;
+            text-indent:10px;
+            width:100%;
+        }
+        textarea {
+            max-width:100%;
+            padding-bottom: 12px;
+            resize: none;
+        }
+        .alert {
+            position: relative;
+            color: #fff;
+            border-radius: 3px;
+            padding: 5px 0;
+            text-align: center;
+            .close-btn {
+                position: absolute;
+                top: 10px;
+                right: 10px;
+            }
+        }
+        .error {
+            background: #c33a3a;                
+        }
+        .success {
+            background: #3ac36d;
+        }
+    }
+    margin:0 auto;
+    display:block;
+}
