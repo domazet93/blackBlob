@@ -16,11 +16,6 @@
                     </router-link>
                 </li>
                 <li>
-                    <router-link to="/blog">
-                        blog
-                    </router-link>
-                </li>
-                <li>
                     <router-link to="/contact">
                         contact
                     </router-link>
