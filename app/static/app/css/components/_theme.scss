@@ -82,11 +82,8 @@ body {
 
 .content {  
     @include fadeIn; 
-    @include breakpoint(phablet) {
-        width: 100%;
-    }
-    @include breakpoint(laptop) {     width: 70%; }
- 
+    @include breakpoint(phablet) { width: 100%; }
+    @include breakpoint(laptop)  { width: 70%; } 
     margin: 0 auto;
 }
 

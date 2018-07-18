@@ -291,17 +291,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
 
 
@@ -1150,7 +1139,8 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "underline"
   }, [_vm._v("Technologies")]), _vm._v(" "), _c('p', [_c('strong', [_vm._v("Programming languages:")]), _vm._v(" Javascript, Python, SASS")]), _vm._v(" "), _c('p', [_c('strong', [_vm._v("Web frameworks:")]), _vm._v(" Angular 4")]), _vm._v(" "), _c('p', [_c('strong', [_vm._v("Build tools:")]), _vm._v(" Angular CLI, webpack")]), _vm._v(" "), _c('a', {
     attrs: {
-      "href": "https://andrena.tech/"
+      "href": "https://andrena.tech/",
+      "target": "_blank"
     }
   }, [_vm._v("VIEW PROJECT ONLINE >")])])
 },function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -1166,7 +1156,8 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "underline"
   }, [_vm._v("Technologies")]), _vm._v(" "), _c('p', [_c('strong', [_vm._v("Programming languages:")]), _vm._v(" Javascript / Node.js")]), _vm._v(" "), _c('p', [_c('strong', [_vm._v("Web frameworks:")]), _vm._v(" Vue2, Koa2, Socket.io")]), _vm._v(" "), _c('p', [_c('strong', [_vm._v("Build tools:")]), _vm._v(" webpack, Cordova")]), _vm._v(" "), _c('a', {
     attrs: {
-      "href": "https://www.flickonfootball.com/"
+      "href": "https://www.flickonfootball.com/",
+      "target": "_blank"
     }
   }, [_vm._v("VIEW PROJECT ONLINE >")])])
 }]}
@@ -1199,11 +1190,13 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "border-light flex--2 p1 m05"
   }, [_c('h2', [_vm._v("Employment History")]), _vm._v(" "), _c('p', [_c('span', [_vm._v("Frontend developer @")]), _c('br'), _vm._v(" "), _c('a', {
     attrs: {
-      "href": "http://goodcode.io/"
+      "href": "http://goodcode.io/",
+      "target": "_blank"
     }
   }, [_vm._v("Goodcode")]), _c('br'), _vm._v(" "), _c('span', [_vm._v("August 2016 - September 2017")]), _c('br'), _vm._v(" "), _c('span', [_vm._v("Zagreb, Croatia")]), _c('br'), _c('br')]), _vm._v(" "), _c('p', [_c('span', [_vm._v("Frontend developer (Intern) @")]), _c('br'), _vm._v(" "), _c('a', {
     attrs: {
-      "href": "https://www.morris-chapman.com/"
+      "href": "https://www.morris-chapman.com/",
+      "target": "_blank"
     }
   }, [_vm._v("Morris & Chapman")]), _c('br'), _vm._v(" "), _c('span', [_vm._v("March 2015 - August 2015")]), _c('br'), _vm._v(" "), _c('span', [_vm._v("Brussels, Belgium")]), _c('br')])]), _vm._v(" "), _c('div', {
     staticClass: "border-light flex--2 p1 m05"
@@ -1241,6 +1234,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "mt-1",
     attrs: {
       "href": "https://github.com/domazet93",
+      "target": "_blank",
       "title": "github"
     }
   }, [_c('img', {
@@ -1251,6 +1245,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "mt-1",
     attrs: {
       "href": "https://stackoverflow.com/users/6774916/t-dom93",
+      "target": "_blank",
       "title": "stackoverflow"
     }
   }, [_c('img', {
@@ -1261,6 +1256,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "mt-1",
     attrs: {
       "href": "https://www.linkedin.com/in/toni-domazet-086a5a13a/",
+      "target": "_blank",
       "title": "linkedin"
     }
   }, [_c('img', {
@@ -1321,15 +1317,13 @@ if (false) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
-    staticClass: "contact"
-  }, [_c('div', {
     staticClass: "container"
   }, [_c('div', {
     staticClass: "text-center"
   }, [_c('div', {}, [_c('navigation')], 1)]), _vm._v(" "), _c('div', {
-    staticClass: "content"
-  }, [_c('div', {}, [_c('div', {}, [_c('h2', [_vm._v("Contact")]), _vm._v(" "), _c('div', {}, [_c('div', {
-    staticClass: "contact-body"
+    staticClass: "contact content"
+  }, [_vm._m(0), _vm._v(" "), _c('div', {
+    staticClass: "flex flex-wrap--wrap"
   }, [_c('label', {
     attrs: {
       "for": "subject"
@@ -1404,9 +1398,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         _vm.formData.email = $event.target.value
       }
     }
-  })]), _vm._v(" "), _c('div', {
-    staticClass: "contact-body"
-  }, [_c('label', {
+  }), _vm._v(" "), _c('label', {
     attrs: {
       "for": "msg"
     }
@@ -1431,11 +1423,16 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         _vm.formData.msg = $event.target.value
       }
     }
-  })])])])])]), _vm._v(" "), _c('div', {}, [_c('div', {
-    staticClass: "contact-body",
-    class: [_vm.isLoading === true ? '' : '']
+  }), _vm._v(" "), _c('div', {
+    staticClass: "flex mt-1",
+    staticStyle: {
+      "width": "100%"
+    }
   }, [_c('input', {
     staticClass: "btn",
+    class: {
+      'mr-1': _vm.isLoading
+    },
     attrs: {
       "type": "button",
       "value": "Get in touch"
@@ -1445,14 +1442,13 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         _vm.onSubmit()
       }
     }
-  })]), _vm._v(" "), (_vm.isLoading) ? _c('div', {}, [_c('img', {
+  }), _vm._v(" "), (_vm.isLoading) ? _c('img', {
+    staticClass: "flex--1",
     attrs: {
       "src": __webpack_require__(15)
     }
-  })]) : _vm._e()]), _vm._v(" "), _c('div', {}, [_c('div', {
-    staticClass: "contact-body"
-  }, [(_vm.isError) ? _c('div', {
-    staticClass: "error alert"
+  }) : _vm._e()]), _vm._v(" "), (_vm.isError) ? _c('div', {
+    staticClass: "error alert mt-1"
   }, [_c('p', [_vm._v("Something goes wrong. Check your form again!")]), _vm._v(" "), _c('a', {
     staticClass: "close-btn",
     attrs: {
@@ -1469,7 +1465,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "src": __webpack_require__(3)
     }
   })])]) : _vm._e(), _vm._v(" "), (_vm.isSuccessMail) ? _c('div', {
-    staticClass: "success alert"
+    staticClass: "success alert mt-1"
   }, [_c('p', [_vm._v("Mail sent successfully. We will be in touch shortly!")]), _vm._v(" "), _c('a', {
     staticClass: "close-btn",
     attrs: {
@@ -1485,8 +1481,10 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     attrs: {
       "src": __webpack_require__(3)
     }
-  })])]) : _vm._e()])])])])
-},staticRenderFns: []}
+  })])]) : _vm._e()])])])
+},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {}, [_c('div', {}, [_c('h2', [_vm._v("Contact")])])])
+}]}
 module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()

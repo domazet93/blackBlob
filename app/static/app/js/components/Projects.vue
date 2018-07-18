@@ -63,7 +63,7 @@
                     <p><strong>Programming languages:</strong> Javascript, Python, SASS</p>
                     <p><strong>Web frameworks:</strong> Angular 4</p>
                     <p><strong>Build tools:</strong> Angular CLI, webpack</p>
-                    <a href="https://andrena.tech/">VIEW PROJECT ONLINE ></a>
+                    <a href="https://andrena.tech/" target="_blank">VIEW PROJECT ONLINE ></a>
                 </div>
             </div>
             <div class="flex flex-wrap--wrap" v-if="projectName === 'flickon'">
@@ -81,7 +81,7 @@
                     <p><strong>Programming languages:</strong> Javascript / Node.js</p>
                     <p><strong>Web frameworks:</strong> Vue2, Koa2, Socket.io</p>
                     <p><strong>Build tools:</strong> webpack, Cordova</p>
-                    <a href="https://www.flickonfootball.com/">VIEW PROJECT ONLINE ></a>
+                    <a href="https://www.flickonfootball.com/" target="_blank">VIEW PROJECT ONLINE ></a>
                 </div>
             </div>
         </div>

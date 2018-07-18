@@ -1,52 +1,41 @@
 <template>
-    <div class="contact">
-        <div class="container">
-            <div class="text-center">
-                <div class="">
-                    <navigation></navigation>
-                </div>
-            </div>
-            <div class="content">
-                <div class="">
-                    <div class="">
-                        <h2>Contact</h2>
-                        <div class="">
-                            <div class="contact-body">
-                                <label for="subject">Subject</label>
-                                <input type="text" name="subject" id="subject" v-model="formData.subject">
-
-                                <label for="fullname">Fullname</label>
-                                <input type="text" name="fullname" id="fullname" v-model="formData.fullname">
-
-                                <label for="email">Email</label>
-                                <input type="email" id="email" v-model="formData.email">
-                            </div>
-                            <div class="contact-body">
-                                <label for="msg">Message</label>
-                                <textarea  name="msg" id="msg" rows="9" v-model="formData.msg"></textarea>
-                            </div>
-                        </div>
-                     </div>
-                </div>
-            </div>
+    <div class="container">
+        <div class="text-center">
             <div class="">
-                <div class="contact-body" :class="[isLoading === true ? '':'']">
-                    <input type="button" class="btn" value="Get in touch" @click="onSubmit()">
-                </div>
-                <div class="" v-if="isLoading">
-                     <img src="~images/loading.svg">
+                <navigation></navigation>
+            </div>
+        </div>
+        <div class="contact content">
+            <div class="">
+                <div class="">
+                    <h2>Contact</h2>
                 </div>
             </div>
-            <div class="">
-                <div class="contact-body">
-                    <div v-if="isError" class="error alert">
-                        <p>Something goes wrong. Check your form again!</p>
-                        <a href="#" class="close-btn" @click.prevent="isError=false"><img src="~images/close.svg"></a>
-                    </div>
-                    <div v-if="isSuccessMail" class="success alert">
-                        <p>Mail sent successfully. We will be in touch shortly!</p>
-                        <a href="#" class="close-btn" @click.prevent="isSuccessMail=false"><img src="~images/close.svg"></a>
-                    </div>
+            <div class="flex flex-wrap--wrap">
+                <label for="subject">Subject</label>
+                <input type="text" name="subject" id="subject" v-model="formData.subject">
+
+                <label for="fullname">Fullname</label>
+                <input type="text" name="fullname" id="fullname" v-model="formData.fullname">
+
+                <label for="email">Email</label>
+                <input type="email" id="email" v-model="formData.email">
+               
+                <label for="msg">Message</label>
+                <textarea name="msg" id="msg" rows="9" v-model="formData.msg"></textarea>
+                        
+                <div style="width: 100%" class="flex mt-1">
+                    <input type="button" class="btn" :class="{ 'mr-1': isLoading }" value="Get in touch" @click="onSubmit()">
+                    <img src="~images/loading.svg" v-if="isLoading" class="flex--1" >
+                </div>
+                
+                <div v-if="isError" class="error alert mt-1">
+                    <p>Something goes wrong. Check your form again!</p>
+                    <a href="#" class="close-btn" @click.prevent="isError=false"><img src="~images/close.svg"></a>
+                </div>
+                <div v-if="isSuccessMail" class="success alert mt-1">
+                    <p>Mail sent successfully. We will be in touch shortly!</p>
+                    <a href="#" class="close-btn" @click.prevent="isSuccessMail=false"><img src="~images/close.svg"></a>
                 </div>
             </div>
         </div>

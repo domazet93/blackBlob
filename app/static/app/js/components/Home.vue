@@ -12,13 +12,13 @@
                         <h2>Employment History</h2>
                         <p>
                             <span>Frontend developer @</span><br/>
-                            <a href="http://goodcode.io/">Goodcode</a><br/>
+                            <a href="http://goodcode.io/" target="_blank">Goodcode</a><br/>
                             <span>August 2016 - September 2017</span><br/>
                             <span>Zagreb, Croatia</span><br/><br/>
                         </p>
                         <p>
                             <span>Frontend developer (Intern) @</span><br/>
-                            <a href="https://www.morris-chapman.com/">Morris & Chapman</a><br/>
+                            <a href="https://www.morris-chapman.com/" target="_blank">Morris & Chapman</a><br/>
                             <span>March 2015 - August 2015</span><br/>
                             <span>Brussels, Belgium</span><br/>
                         </p>
@@ -51,9 +51,9 @@
                     </div>
                     <div class="home__links flex flex-direction--column border-light flex--1 p1 m05">
                         <h2>Links</h2>
-                        <a href="https://github.com/domazet93" class="mt-1" title="github"><img src="~images/github.ico"> github</a>
-                        <a href="https://stackoverflow.com/users/6774916/t-dom93" class="mt-1"  title="stackoverflow"><img src="~images/stackoverflow.png"> stackoverflow</a>
-                        <a href="https://www.linkedin.com/in/toni-domazet-086a5a13a/" class="mt-1"  title="linkedin"><img src="~images/linkedin.png">linkedin</a>
+                        <a href="https://github.com/domazet93" target="_blank" class="mt-1" title="github"><img src="~images/github.ico"> github</a>
+                        <a href="https://stackoverflow.com/users/6774916/t-dom93" target="_blank" class="mt-1"  title="stackoverflow"><img src="~images/stackoverflow.png"> stackoverflow</a>
+                        <a href="https://www.linkedin.com/in/toni-domazet-086a5a13a/" target="_blank" class="mt-1"  title="linkedin"><img src="~images/linkedin.png">linkedin</a>
                     </div>
                 </div>
             </div>
