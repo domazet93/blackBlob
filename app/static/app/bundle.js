@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "/static/app/";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 41);
+/******/ 	return __webpack_require__(__webpack_require__.s = 37);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -127,40 +127,6 @@ module.exports = function normalizeComponent (
 /* 1 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var Component = __webpack_require__(0)(
-  /* script */
-  __webpack_require__(8),
-  /* template */
-  __webpack_require__(32),
-  /* scopeId */
-  null,
-  /* cssModules */
-  null
-)
-Component.options.__file = "/home/toni/Projects/blackBlob/app/static/app/js/components/Navigation.vue"
-if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
-if (Component.options.functional) {console.error("[vue-loader] Navigation.vue: functional components are not supported with templates, they should use render functions.")}
-
-/* hot reload */
-if (false) {(function () {
-  var hotAPI = require("vue-hot-reload-api")
-  hotAPI.install(require("vue"), false)
-  if (!hotAPI.compatible) return
-  module.hot.accept()
-  if (!module.hot.data) {
-    hotAPI.createRecord("data-v-81a81a7a", Component.options)
-  } else {
-    hotAPI.reload("data-v-81a81a7a", Component.options)
-  }
-})()}
-
-module.exports = Component.exports
-
-
-/***/ }),
-/* 2 */
-/***/ (function(module, exports, __webpack_require__) {
-
 "use strict";
 /* WEBPACK VAR INJECTION */(function(Vue) {
 
@@ -169,23 +135,23 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.router = undefined;
 
-var _vueRouter = __webpack_require__(37);
+var _vueRouter = __webpack_require__(33);
 
 var _vueRouter2 = _interopRequireDefault(_vueRouter);
 
-var _vueResource = __webpack_require__(36);
+var _vueResource = __webpack_require__(32);
 
 var _vueResource2 = _interopRequireDefault(_vueResource);
 
-var _vueCookie = __webpack_require__(24);
+var _vueCookie = __webpack_require__(22);
 
 var _vueCookie2 = _interopRequireDefault(_vueCookie);
 
-var _routes = __webpack_require__(10);
+var _routes = __webpack_require__(9);
 
 var _routes2 = _interopRequireDefault(_routes);
 
-var _App = __webpack_require__(25);
+var _App = __webpack_require__(23);
 
 var _App2 = _interopRequireDefault(_App);
 
@@ -210,7 +176,41 @@ new Vue({
     template: "<App/>",
     components: { App: _App2.default }
 });
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(38)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(34)))
+
+/***/ }),
+/* 2 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var Component = __webpack_require__(0)(
+  /* script */
+  __webpack_require__(7),
+  /* template */
+  __webpack_require__(29),
+  /* scopeId */
+  null,
+  /* cssModules */
+  null
+)
+Component.options.__file = "/home/toni/Projects/blackBlob/app/static/app/js/components/Navigation.vue"
+if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
+if (Component.options.functional) {console.error("[vue-loader] Navigation.vue: functional components are not supported with templates, they should use render functions.")}
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-81a81a7a", Component.options)
+  } else {
+    hotAPI.reload("data-v-81a81a7a", Component.options)
+  }
+})()}
+
+module.exports = Component.exports
+
 
 /***/ }),
 /* 3 */
@@ -238,15 +238,14 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 5 */,
-/* 6 */
+/* 5 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_Navigation__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_Navigation__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_Navigation___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__components_Navigation__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__shared_emailValidator__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__shared_emailValidator__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__shared_emailValidator___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__shared_emailValidator__);
 //
 //
@@ -351,13 +350,20 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 7 */
+/* 6 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Navigation__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Navigation__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Navigation___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__Navigation__);
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -426,7 +432,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 8 */
+/* 7 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -464,12 +470,12 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 9 */
+/* 8 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Navigation__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Navigation__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Navigation___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__Navigation__);
 //
 //
@@ -584,7 +590,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 10 */
+/* 9 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -594,15 +600,15 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 
-var _Home = __webpack_require__(28);
+var _Home = __webpack_require__(25);
 
 var _Home2 = _interopRequireDefault(_Home);
 
-var _Contact = __webpack_require__(27);
+var _Contact = __webpack_require__(24);
 
 var _Contact2 = _interopRequireDefault(_Contact);
 
-var _Projects = __webpack_require__(29);
+var _Projects = __webpack_require__(26);
 
 var _Projects2 = _interopRequireDefault(_Projects);
 
@@ -613,7 +619,7 @@ var routes = [{ path: "/", component: _Home2.default }, { path: "/contact", comp
 exports.default = routes;
 
 /***/ }),
-/* 11 */
+/* 10 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -630,73 +636,67 @@ function emailValidator(email) {
 }
 
 /***/ }),
-/* 12 */
+/* 11 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "images/andrena_scheme.png";
 
 /***/ }),
-/* 13 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "images/development.svg";
-
-/***/ }),
-/* 14 */
+/* 12 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "images/github.ico";
 
 /***/ }),
-/* 15 */
+/* 13 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "images/heart.svg";
 
 /***/ }),
-/* 16 */
+/* 14 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "images/linkedin.png";
 
 /***/ }),
-/* 17 */
+/* 15 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "images/loading.svg";
 
 /***/ }),
-/* 18 */
+/* 16 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "images/mb_scheme.png";
 
 /***/ }),
-/* 19 */
+/* 17 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "images/me.jpg";
 
 /***/ }),
-/* 20 */
+/* 18 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "images/phone_flickOn.png";
 
 /***/ }),
-/* 21 */
+/* 19 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "images/search.svg";
 
 /***/ }),
-/* 22 */
+/* 20 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "images/stackoverflow.png";
 
 /***/ }),
-/* 23 */
+/* 21 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -858,7 +858,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
 
 
 /***/ }),
-/* 24 */
+/* 22 */
 /***/ (function(module, exports, __webpack_require__) {
 
 (function () {
@@ -867,7 +867,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
             isFinite(value) &&
             Math.floor(value) === value;
     };
-    var Cookie = __webpack_require__(23);
+    var Cookie = __webpack_require__(21);
 
     var VueCookie = {
 
@@ -909,14 +909,14 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
 
 
 /***/ }),
-/* 25 */
+/* 23 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var Component = __webpack_require__(0)(
   /* script */
   __webpack_require__(4),
   /* template */
-  __webpack_require__(35),
+  __webpack_require__(31),
   /* scopeId */
   null,
   /* cssModules */
@@ -943,15 +943,14 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 26 */,
-/* 27 */
+/* 24 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var Component = __webpack_require__(0)(
   /* script */
-  __webpack_require__(6),
+  __webpack_require__(5),
   /* template */
-  __webpack_require__(34),
+  __webpack_require__(30),
   /* scopeId */
   null,
   /* cssModules */
@@ -978,14 +977,14 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 28 */
+/* 25 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var Component = __webpack_require__(0)(
   /* script */
-  __webpack_require__(7),
+  __webpack_require__(6),
   /* template */
-  __webpack_require__(31),
+  __webpack_require__(28),
   /* scopeId */
   null,
   /* cssModules */
@@ -1012,14 +1011,14 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 29 */
+/* 26 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var Component = __webpack_require__(0)(
   /* script */
-  __webpack_require__(9),
+  __webpack_require__(8),
   /* template */
-  __webpack_require__(30),
+  __webpack_require__(27),
   /* scopeId */
   null,
   /* cssModules */
@@ -1046,7 +1045,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 30 */
+/* 27 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -1055,16 +1054,12 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('div', {
     staticClass: "container"
   }, [_c('div', {
-    staticClass: "row text-center"
-  }, [_c('div', {
-    staticClass: "col-md-4 col-md-offset-4"
-  }, [_c('navigation')], 1)]), _vm._v(" "), _c('div', {
+    staticClass: "text-center"
+  }, [_c('div', {}, [_c('navigation')], 1)]), _vm._v(" "), _c('div', {
     staticClass: "content"
   }, [_vm._m(0), _vm._v(" "), _c('div', {
-    staticClass: "row project-links mb-2"
-  }, [_c('div', {
-    staticClass: "col-md-4"
-  }, [_c('a', {
+    staticClass: "project-links mb-2"
+  }, [_c('div', {}, [_c('a', {
     attrs: {
       "href": "#"
     },
@@ -1077,11 +1072,9 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   }, [_c('img', {
     attrs: {
-      "src": __webpack_require__(18)
+      "src": __webpack_require__(16)
     }
-  }), _vm._v(" "), _c('h4', [_vm._v("MusicBox")])])]), _vm._v(" "), _c('div', {
-    staticClass: "col-md-4"
-  }, [_c('a', {
+  }), _vm._v(" "), _c('h4', [_vm._v("MusicBox")])])]), _vm._v(" "), _c('div', {}, [_c('a', {
     attrs: {
       "href": "#"
     },
@@ -1094,11 +1087,9 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   }, [_c('img', {
     attrs: {
-      "src": __webpack_require__(12)
+      "src": __webpack_require__(11)
     }
-  }), _vm._v(" "), _c('h4', [_vm._v("Andrena")])])]), _vm._v(" "), _c('div', {
-    staticClass: "col-md-4"
-  }, [_c('a', {
+  }), _vm._v(" "), _c('h4', [_vm._v("Andrena")])])]), _vm._v(" "), _c('div', {}, [_c('a', {
     attrs: {
       "href": "#"
     },
@@ -1111,31 +1102,17 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   }, [_c('img', {
     attrs: {
-      "src": __webpack_require__(20)
+      "src": __webpack_require__(18)
     }
-  }), _vm._v(" "), _c('h4', [_vm._v("Flick On Football (Personal Project)")])])])]), _vm._v(" "), (_vm.projectName === 'musicbox') ? _c('div', {
-    staticClass: "row"
-  }, [_vm._m(1), _vm._v(" "), _vm._m(2)]) : _vm._e(), _vm._v(" "), (_vm.projectName === 'andrena') ? _c('div', {
-    staticClass: "row"
-  }, [_vm._m(3), _vm._v(" "), _vm._m(4)]) : _vm._e(), _vm._v(" "), (_vm.projectName === 'flickon') ? _c('div', {
-    staticClass: "row"
-  }, [_vm._m(5), _vm._v(" "), _vm._m(6)]) : _vm._e()])])])
+  }), _vm._v(" "), _c('h4', [_vm._v("Flick On Football (Personal Project)")])])])]), _vm._v(" "), (_vm.projectName === 'musicbox') ? _c('div', {}, [_vm._m(1), _vm._v(" "), _vm._m(2)]) : _vm._e(), _vm._v(" "), (_vm.projectName === 'andrena') ? _c('div', {}, [_vm._m(3), _vm._v(" "), _vm._m(4)]) : _vm._e(), _vm._v(" "), (_vm.projectName === 'flickon') ? _c('div', {}, [_vm._m(5), _vm._v(" "), _vm._m(6)]) : _vm._e()])])])
 },staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "row"
-  }, [_c('div', {
-    staticClass: "col-md-4"
-  }, [_c('h2', [_vm._v("Projects")])])])
+  return _c('div', {}, [_c('div', {}, [_c('h2', [_vm._v("Projects")])])])
 },function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "col-md-8"
-  }, [_c('h4', {
+  return _c('div', {}, [_c('h4', {
     staticClass: "underline"
   }, [_vm._v("Project Descriprion")]), _vm._v(" "), _c('p', [_vm._v("MusicBox is a music streaming service with a specific focus on cafes, restaurants, stores and similar venues."), _c('br'), _c('br'), _vm._v("\n                        Musicbox is Single Page App and my job was to replace and separate old UI into "), _c('strong', [_vm._v("mobile")]), _vm._v(" and "), _c('strong', [_vm._v("full (desktop)")]), _vm._v(" UI using BackboneJS. BackboneJS helped in structuring app into the models and views."), _c('br'), _c('br'), _vm._v("\n                        Template is served through Django and app has many "), _c('strong', [_vm._v("Ionic")]), _vm._v(" classes for styling components.\n                        Desktop UI come after mobile UI and we give a try to Vue2Js. App is divided into the components and with help of Vuex library they all share data."), _c('br'), _c('br'), _vm._v("\n                        Webpack is used to bundle and minify output file. No tests on frontend side.\n                        Backend is written in Go and Python (Django framework) so I'm familiar with Django app structure and most of the time I used Swagger to see API design and outputs for each endpoint.\n                    ")])])
 },function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "col-md-4"
-  }, [_c('h4', {
+  return _c('div', {}, [_c('h4', {
     staticClass: "underline"
   }, [_vm._v("Technologies")]), _vm._v(" "), _c('p', [_c('strong', [_vm._v("Programming languages:")]), _vm._v(" Javascript, Python")]), _vm._v(" "), _c('p', [_c('strong', [_vm._v("Web frameworks:")]), _vm._v(" BackboneJS, Vue2, Ionic")]), _vm._v(" "), _c('p', [_c('strong', [_vm._v("Build tools:")]), _vm._v(" webpack")]), _vm._v(" "), _c('a', {
     attrs: {
@@ -1143,9 +1120,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   }, [_vm._v("VIEW PROJECT ONLINE >")])])
 },function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "col-md-8"
-  }, [_c('h4', {
+  return _c('div', {}, [_c('h4', {
     staticClass: "underline"
   }, [_vm._v("Project Descriprion")]), _vm._v(" "), _c('p', [_vm._v("Wi-Fi powered by local community.")]), _vm._v(" "), _c('p', [_vm._v("My focus was to create frontend part of the app. This isn't a single page app, instead there are many templates served by Django. "), _c('br'), _c('br'), _vm._v("\n                      Client only ask for spash page, getting-started workflow and templates for managing account (we choosed "), _c('a', {
     attrs: {
@@ -1153,9 +1128,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   }, [_vm._v("django-allauth")]), _vm._v(")."), _c('br'), _vm._v(" I worked with "), _c('strong', [_vm._v("Angular 4")]), _vm._v(" and project was generated with a help of "), _c('strong', [_vm._v("angular-cli")]), _vm._v(". Config file has multiple apps and every template has inline, scripts and main bundle file.")])])
 },function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "col-md-4"
-  }, [_c('h4', {
+  return _c('div', {}, [_c('h4', {
     staticClass: "underline"
   }, [_vm._v("Technologies")]), _vm._v(" "), _c('p', [_c('strong', [_vm._v("Programming languages:")]), _vm._v(" Javascript, Python, SASS")]), _vm._v(" "), _c('p', [_c('strong', [_vm._v("Web frameworks:")]), _vm._v(" Angular 4")]), _vm._v(" "), _c('p', [_c('strong', [_vm._v("Build tools:")]), _vm._v(" Angular CLI, webpack")]), _vm._v(" "), _c('a', {
     attrs: {
@@ -1163,15 +1136,11 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   }, [_vm._v("VIEW PROJECT ONLINE >")])])
 },function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "col-md-8"
-  }, [_c('h4', {
+  return _c('div', {}, [_c('h4', {
     staticClass: "underline"
   }, [_vm._v("Project Descriprion")]), _vm._v("\n                    Flick On Football is community for football players. They can create or join the match, chat with teams and earn reputation.\n\n                    "), _c('p', [_vm._v("This is SPA app and it's completly done by myself. Frontend part use Vue2. Project is separated into the single file components, loaded through router, and they all can share data and have access to the "), _c('strong', [_vm._v("vuex store object")]), _vm._v("."), _c('br'), _c('br'), _vm._v(" "), _c('strong', [_vm._v("Node.js (Koa) ")]), _vm._v(" and "), _c('strong', [_vm._v("MongoDB")]), _vm._v(" is used for backend."), _c('br'), _c('br'), _vm._v("\n                    Currently I work with "), _c('strong', [_vm._v("Cordova")]), _vm._v(" and "), _c('strong', [_vm._v("Android SDK")]), _vm._v(" to build Android apk from existing JS code.\n                    ")])])
 },function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "col-md-4"
-  }, [_c('h4', {
+  return _c('div', {}, [_c('h4', {
     staticClass: "underline"
   }, [_vm._v("Technologies")]), _vm._v(" "), _c('p', [_c('strong', [_vm._v("Programming languages:")]), _vm._v(" Javascript / Node.js")]), _vm._v(" "), _c('p', [_c('strong', [_vm._v("Web frameworks:")]), _vm._v(" Vue2, Koa2, Socket.io")]), _vm._v(" "), _c('p', [_c('strong', [_vm._v("Build tools:")]), _vm._v(" webpack, Cordova")]), _vm._v(" "), _c('a', {
     attrs: {
@@ -1188,7 +1157,7 @@ if (false) {
 }
 
 /***/ }),
-/* 31 */
+/* 28 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -1197,17 +1166,15 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('div', {
     staticClass: "container"
   }, [_c('div', {
-    staticClass: "row text-center"
-  }, [_c('div', {
-    staticClass: "col-md-4 col-md-offset-4"
-  }, [_c('navigation')], 1)]), _vm._v(" "), _vm._m(0)])])
+    staticClass: "text-center"
+  }, [_c('div', {}, [_c('navigation')], 1)]), _vm._v(" "), _vm._m(0)])])
 },staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: "content"
   }, [_c('div', {
-    staticClass: "row mb-2"
+    staticClass: "flex flex-wrap--wrap"
   }, [_c('div', {
-    staticClass: "col-md-4 border-light mb-2 "
+    staticClass: "border-light flex--2 p1 m05"
   }, [_c('h2', [_vm._v("Employment History")]), _vm._v(" "), _c('p', [_c('span', [_vm._v("Frontend developer @")]), _c('br'), _vm._v(" "), _c('a', {
     attrs: {
       "href": "http://goodcode.io/"
@@ -1217,54 +1184,66 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "href": "https://www.morris-chapman.com/"
     }
   }, [_vm._v("Morris & Chapman")]), _c('br'), _vm._v(" "), _c('span', [_vm._v("March 2015 - August 2015")]), _c('br'), _vm._v(" "), _c('span', [_vm._v("Brussels, Belgium")]), _c('br')])]), _vm._v(" "), _c('div', {
-    staticClass: "col-md-4 text-center mb-2"
+    staticClass: "border-light flex--2 p1 m05"
+  }, [_c('h2', [_vm._v("Stack")]), _vm._v(" "), _c('div', {
+    staticClass: "flex align-items--start"
   }, [_c('img', {
-    staticClass: "img-development",
     attrs: {
       "src": __webpack_require__(13)
     }
-  })]), _vm._v(" "), _c('div', {
-    staticClass: "col-md-4 border-light love-section"
+  }), _vm._v("                            \n                        "), _c('div', {
+    staticClass: "flex--1"
+  }, [_c('h4', {
+    staticClass: "m0"
+  }, [_vm._v("LOVE WORK WITH")]), _vm._v(" "), _c('p', {
+    staticClass: "m0"
+  }, [_vm._v("Node.js, MongoDB, VueJS, "), _c('br'), _vm._v(" Webpack, SASS, SVG")])])]), _vm._v(" "), _c('div', {
+    staticClass: "flex align-items--start m05"
   }, [_c('img', {
     attrs: {
-      "src": __webpack_require__(15)
+      "src": __webpack_require__(19)
     }
-  }), _c('h4', [_vm._v("LOVE WORK WITH")]), _vm._v(" "), _c('p', [_vm._v("Node.js, MongoDB, VueJS, Webpack, SASS, SVG")]), _c('br'), _vm._v(" "), _c('img', {
-    attrs: {
-      "src": __webpack_require__(21)
-    }
-  }), _c('h4', [_vm._v("CURRENTLY RESEARCHING")]), _vm._v(" "), _c('p', [_vm._v("Angular, TypeScript")])])]), _vm._v(" "), _c('div', {
-    staticClass: "row"
+  }), _vm._v("  \n                        "), _c('div', {
+    staticClass: "flex--1"
+  }, [_c('h4', {
+    staticClass: "m0"
+  }, [_vm._v("CURRENTLY RESEARCHING")]), _vm._v(" "), _c('p', {
+    staticClass: "m0"
+  }, [_vm._v("Angular, TypeScript")])])])])]), _vm._v(" "), _c('div', {
+    staticClass: "flex flex-wrap--wrap"
   }, [_c('div', {
-    staticClass: "col-md-4 border-light mb-2"
+    staticClass: "border-light flex--1 p1 m05"
   }, [_c('h2', [_vm._v("Overview")]), _vm._v(" "), _c('p', [_vm._v("I'm Toni Domazet, Javascript developer with 2 years experience in developing web apps."), _c('br'), _c('br'), _vm._v("\n                    I have a bachelor's degree in IT Engineering. "), _c('br'), _c('br'), _vm._v(" I'm passionate, self-motivated person and active member of local Javascript community.\n                    ")])]), _vm._v(" "), _c('div', {
-    staticClass: "col-md-4 col-md-offset-4 portfolio-links border-light"
+    staticClass: "home__links flex flex-direction--column border-light flex--1 p1 m05"
   }, [_c('h2', [_vm._v("Links")]), _vm._v(" "), _c('a', {
+    staticClass: "mt-1",
     attrs: {
       "href": "https://github.com/domazet93",
       "title": "github"
     }
   }, [_c('img', {
     attrs: {
-      "src": __webpack_require__(14)
+      "src": __webpack_require__(12)
     }
   }), _vm._v(" github")]), _vm._v(" "), _c('a', {
+    staticClass: "mt-1",
     attrs: {
       "href": "https://stackoverflow.com/users/6774916/t-dom93",
       "title": "stackoverflow"
     }
   }, [_c('img', {
     attrs: {
-      "src": __webpack_require__(22)
+      "src": __webpack_require__(20)
     }
   }), _vm._v(" stackoverflow")]), _vm._v(" "), _c('a', {
+    staticClass: "mt-1",
     attrs: {
       "href": "https://www.linkedin.com/in/toni-domazet-086a5a13a/",
       "title": "linkedin"
     }
   }, [_c('img', {
     attrs: {
-      "src": __webpack_require__(16)
+      "src": __webpack_require__(14)
     }
   }), _vm._v("linkedin")])])])])
 }]}
@@ -1277,7 +1256,7 @@ if (false) {
 }
 
 /***/ }),
-/* 32 */
+/* 29 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -1299,12 +1278,10 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   }, [_vm._v("\n                    contact\n                ")])], 1)])])])
 },staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "row"
-  }, [_c('img', {
+  return _c('div', {}, [_c('img', {
     staticClass: "avatar",
     attrs: {
-      "src": __webpack_require__(19)
+      "src": __webpack_require__(17)
     }
   })])
 }]}
@@ -1317,8 +1294,7 @@ if (false) {
 }
 
 /***/ }),
-/* 33 */,
-/* 34 */
+/* 30 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -1327,19 +1303,11 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('div', {
     staticClass: "container"
   }, [_c('div', {
-    staticClass: "row text-center"
-  }, [_c('div', {
-    staticClass: "col-md-4 col-md-offset-4"
-  }, [_c('navigation')], 1)]), _vm._v(" "), _c('div', {
+    staticClass: "text-center"
+  }, [_c('div', {}, [_c('navigation')], 1)]), _vm._v(" "), _c('div', {
     staticClass: "content"
-  }, [_c('div', {
-    staticClass: "row"
-  }, [_c('div', {
-    staticClass: "col-md-12 "
-  }, [_c('h2', [_vm._v("Contact")]), _vm._v(" "), _c('div', {
-    staticClass: "row"
-  }, [_c('div', {
-    staticClass: "col-md-4 contact-body"
+  }, [_c('div', {}, [_c('div', {}, [_c('h2', [_vm._v("Contact")]), _vm._v(" "), _c('div', {}, [_c('div', {
+    staticClass: "contact-body"
   }, [_c('label', {
     attrs: {
       "for": "subject"
@@ -1415,7 +1383,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       }
     }
   })]), _vm._v(" "), _c('div', {
-    staticClass: "col-md-8 contact-body"
+    staticClass: "contact-body"
   }, [_c('label', {
     attrs: {
       "for": "msg"
@@ -1441,11 +1409,9 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         _vm.formData.msg = $event.target.value
       }
     }
-  })])])])])]), _vm._v(" "), _c('div', {
-    staticClass: "row"
-  }, [_c('div', {
+  })])])])])]), _vm._v(" "), _c('div', {}, [_c('div', {
     staticClass: "contact-body",
-    class: [_vm.isLoading === true ? 'col-md-3' : 'col-md-4']
+    class: [_vm.isLoading === true ? '' : '']
   }, [_c('input', {
     staticClass: "btn",
     attrs: {
@@ -1457,16 +1423,12 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         _vm.onSubmit()
       }
     }
-  })]), _vm._v(" "), (_vm.isLoading) ? _c('div', {
-    staticClass: "col-md-4"
-  }, [_c('img', {
+  })]), _vm._v(" "), (_vm.isLoading) ? _c('div', {}, [_c('img', {
     attrs: {
-      "src": __webpack_require__(17)
+      "src": __webpack_require__(15)
     }
-  })]) : _vm._e()]), _vm._v(" "), _c('div', {
-    staticClass: "row"
-  }, [_c('div', {
-    staticClass: "col-md-12 contact-body"
+  })]) : _vm._e()]), _vm._v(" "), _c('div', {}, [_c('div', {
+    staticClass: "contact-body"
   }, [(_vm.isError) ? _c('div', {
     staticClass: "error alert"
   }, [_c('p', [_vm._v("Something goes wrong. Check your form again!")]), _vm._v(" "), _c('a', {
@@ -1512,7 +1474,7 @@ if (false) {
 }
 
 /***/ }),
-/* 35 */
+/* 31 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -1533,7 +1495,7 @@ if (false) {
 }
 
 /***/ }),
-/* 36 */
+/* 32 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2635,7 +2597,7 @@ var xhrClient = function (request) {
 
 var nodeClient = function (request) {
 
-    var client = __webpack_require__(40);
+    var client = __webpack_require__(36);
 
     return new PromiseObj(function (resolve) {
 
@@ -3111,7 +3073,7 @@ if (typeof window !== 'undefined' && window.Vue) {
 
 
 /***/ }),
-/* 37 */
+/* 33 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -5624,7 +5586,7 @@ if (inBrowser && window.Vue) {
 
 
 /***/ }),
-/* 38 */
+/* 34 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -15821,10 +15783,10 @@ Vue$3.compile = compileToFunctions;
 
 module.exports = Vue$3;
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(39)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(35)))
 
 /***/ }),
-/* 39 */
+/* 35 */
 /***/ (function(module, exports) {
 
 var g;
@@ -15851,17 +15813,17 @@ module.exports = g;
 
 
 /***/ }),
-/* 40 */
+/* 36 */
 /***/ (function(module, exports) {
 
 /* (ignored) */
 
 /***/ }),
-/* 41 */
+/* 37 */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(2);
-module.exports = __webpack_require__(2);
+__webpack_require__(1);
+module.exports = __webpack_require__(1);
 
 
 /***/ })

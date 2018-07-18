@@ -1,14 +1,14 @@
 <template>
     <div class="home">
         <div class="container">
-            <div class="row text-center">
-                <div class="col-md-4 col-md-offset-4">
+            <div class="text-center">
+                <div class="">
                     <navigation></navigation>
                 </div>
             </div>
             <div class="content">
-                <div class="row mb-2">
-                    <div class="col-md-4 border-light mb-2 ">
+                <div class="flex flex-wrap--wrap">
+                    <div class="border-light flex--2 p1 m05">
                         <h2>Employment History</h2>
                         <p>
                             <span>Frontend developer @</span><br/>
@@ -24,29 +24,36 @@
                         </p>
                     </div>
 
-                    <div class="col-md-4 text-center mb-2">
-                        <img src="~images/development.svg" class="img-development">
-                    </div>
-
-                    <div class="col-md-4 border-light love-section">
-                        <img src="~images/heart.svg"><h4>LOVE WORK WITH</h4>
-                        <p>Node.js, MongoDB, VueJS, Webpack, SASS, SVG</p><br />
-                        <img src="~images/search.svg"><h4>CURRENTLY RESEARCHING</h4>
-                        <p>Angular, TypeScript</p>
-                    </div>
+                    <div class="border-light flex--2 p1 m05">
+                        <h2>Stack</h2>
+                        <div class="flex align-items--start">
+                            <img src="~images/heart.svg">&nbsp;                           
+                            <div class="flex--1">
+                                <h4 class="m0">LOVE WORK WITH</h4>
+                                <p class="m0">Node.js, MongoDB, VueJS, <br /> Webpack, SASS, SVG</p>
+                            </div>
+                        </div>
+                        <div class="flex align-items--start m05">
+                            <img src="~images/search.svg">&nbsp; 
+                            <div class="flex--1">
+                                <h4 class="m0">CURRENTLY RESEARCHING</h4>
+                                <p class="m0">Angular, TypeScript</p>
+                            </div>
+                        </div>
+                    </div> 
                 </div>
-                <div class="row">
-                     <div class="col-md-4 border-light mb-2">
+                <div class="flex flex-wrap--wrap">
+                     <div class="border-light flex--1 p1 m05">
                         <h2>Overview</h2>
                         <p>I'm Toni Domazet, Javascript developer with 2 years experience in developing web apps.<br /><br />
                         I have a bachelor's degree in IT Engineering. <br /><br /> I'm passionate, self-motivated person and active member of local Javascript community.
-                        </p>
+                        </p> 
                     </div>
-                    <div class="col-md-4 col-md-offset-4 portfolio-links border-light">
+                    <div class="home__links flex flex-direction--column border-light flex--1 p1 m05">
                         <h2>Links</h2>
-                        <a href="https://github.com/domazet93" title="github"><img src="~images/github.ico"> github</a>
-                        <a href="https://stackoverflow.com/users/6774916/t-dom93" title="stackoverflow"><img src="~images/stackoverflow.png"> stackoverflow</a>
-                        <a href="https://www.linkedin.com/in/toni-domazet-086a5a13a/" title="linkedin"><img src="~images/linkedin.png">linkedin</a>
+                        <a href="https://github.com/domazet93" class="mt-1" title="github"><img src="~images/github.ico"> github</a>
+                        <a href="https://stackoverflow.com/users/6774916/t-dom93" class="mt-1"  title="stackoverflow"><img src="~images/stackoverflow.png"> stackoverflow</a>
+                        <a href="https://www.linkedin.com/in/toni-domazet-086a5a13a/" class="mt-1"  title="linkedin"><img src="~images/linkedin.png">linkedin</a>
                     </div>
                 </div>
             </div>

@@ -1,6 +1,6 @@
 <template>
     <div class="navigation">
-        <div class="row">
+        <div class="">
             <img src="~images/me.jpg" class="avatar">
         </div>
         <nav class="navbar">

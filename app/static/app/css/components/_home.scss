@@ -3,33 +3,7 @@ HOME
 ------------------------------------- */
 
 .home {
-    .img-development {
-        max-width:100%;
-    }
-    .portfolio-links {
-        img {
-            max-width: 25px;
-            margin-right: 10px;
-        } 
-        a {
-            margin: 10px 0;
-            width: 100%;
-            display: inline-block;
-            &:hover {
-                color: #333;
-                text-decoration: none;
-            }
-        }
-    }
-    .love-section {
-        padding: 18px;
-        h4 {            
-            display:inline;
-            margin: 0 5px;
-        }
-        p {
-            margin:0 30px;
-            width: 60%;
-        }
+    &__links {
+        img { max-width: 30px; }
     }
 }
