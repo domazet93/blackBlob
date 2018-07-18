@@ -33,7 +33,7 @@
                                 <p class="m0">Node.js, MongoDB, VueJS, <br /> Webpack, SASS, SVG</p>
                             </div>
                         </div>
-                        <div class="flex align-items--start m05">
+                        <div class="flex align-items--start mt-1">
                             <img src="~images/search.svg">&nbsp; 
                             <div class="flex--1">
                                 <h4 class="m0">CURRENTLY RESEARCHING</h4>
