@@ -51,9 +51,9 @@
                     </div>
                     <div class="home__links flex flex-direction--column border-light flex--1 p1 m05">
                         <h2>Links</h2>
-                        <a href="https://github.com/domazet93" target="_blank" class="mt-1" title="github"><img src="~images/github.ico"> github</a>
-                        <a href="https://stackoverflow.com/users/6774916/t-dom93" target="_blank" class="mt-1"  title="stackoverflow"><img src="~images/stackoverflow.png"> stackoverflow</a>
-                        <a href="https://www.linkedin.com/in/toni-domazet-086a5a13a/" target="_blank" class="mt-1"  title="linkedin"><img src="~images/linkedin.png">linkedin</a>
+                        <a href="https://github.com/domazet93" target="_blank" class="mt-1" title="github"><img src="~images/github.ico" class="mr-1">github</a>
+                        <a href="https://stackoverflow.com/users/6774916/t-dom93" target="_blank" class="mt-1"  title="stackoverflow"><img src="~images/stackoverflow.png" class="mr-1">stackoverflow</a>
+                        <a href="https://www.linkedin.com/in/toni-domazet-086a5a13a/" target="_blank" class="mt-1"  title="linkedin"><img src="~images/linkedin.png" class="mr-1">linkedin</a>
                     </div>
                 </div>
             </div>

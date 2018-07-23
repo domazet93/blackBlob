@@ -6,32 +6,32 @@
             </div>
         </div>
         <div class="content projects">
-            <div class="">
+            <div class="p1">
                 <div class="">
                     <h2>Projects</h2>
                 </div>
             </div>
-            <div class="flex flex-wrap--wrap mb-2">
+            <div class="flex mb-2 p1">
                 <div class="flex--1">
                     <a href="#" @click.stop.prevent="changeView('musicbox')">
                         <img src="~images/mb_scheme.png">
                         <h4>MusicBox</h4>
                     </a>
                 </div>
-                <div class="flex--1">
+                <div class="flex--1 projects__box">
                     <a href="#" @click.stop.prevent="changeView('andrena')">
                         <img src="~images/andrena_scheme.png">
                         <h4>Andrena</h4>
                     </a>
                 </div>
-                <div class="flex--1">
+                <div class="flex--1 projects__box">
                     <a href="#" @click.stop.prevent="changeView('flickon')">
                         <img src="~images/phone_flickOn.png">
                         <h4>Flick On Football (Personal Project)</h4>
                     </a>
                 </div>
             </div>
-            <div class="flex flex-wrap--wrap" v-if="projectName === 'musicbox'">
+            <div class="flex flex-wrap--wrap p1" v-if="projectName === 'musicbox'">
                 <div class="flex--2 mr-2">
                     <h4 class="underline">Project Descriprion</h4>
                     <p>MusicBox is a music streaming service with a specific focus on cafes, restaurants, stores and similar venues.<br /><br />
@@ -50,7 +50,7 @@
                     <a href="https://musicbox.com.hr/" target="_blank">VIEW PROJECT ONLINE ></a>
                 </div>
             </div>
-            <div class="flex flex-wrap--wrap" v-if="projectName === 'andrena'">
+            <div class="flex flex-wrap--wrap p1" v-if="projectName === 'andrena'">
                 <div class="flex--2 mr-2">
                     <h4 class="underline">Project Descriprion</h4>
                     <p>Wi-Fi powered by local community.</p>
@@ -66,7 +66,7 @@
                     <a href="https://andrena.tech/" target="_blank">VIEW PROJECT ONLINE ></a>
                 </div>
             </div>
-            <div class="flex flex-wrap--wrap" v-if="projectName === 'flickon'">
+            <div class="flex flex-wrap--wrap p1" v-if="projectName === 'flickon'">
                 <div class="flex--2 mr-2">
                     <h4 class="underline">Project Descriprion</h4>
                     Flick On Football is community for football players. They can create or join the match, chat with teams and earn reputation.

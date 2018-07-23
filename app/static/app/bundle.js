@@ -291,6 +291,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
 
 
 
@@ -1044,7 +1047,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('div', {}, [_c('navigation')], 1)]), _vm._v(" "), _c('div', {
     staticClass: "content projects"
   }, [_vm._m(0), _vm._v(" "), _c('div', {
-    staticClass: "flex flex-wrap--wrap mb-2"
+    staticClass: "flex mb-2 p1"
   }, [_c('div', {
     staticClass: "flex--1"
   }, [_c('a', {
@@ -1063,7 +1066,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "src": __webpack_require__(16)
     }
   }), _vm._v(" "), _c('h4', [_vm._v("MusicBox")])])]), _vm._v(" "), _c('div', {
-    staticClass: "flex--1"
+    staticClass: "flex--1 projects__box"
   }, [_c('a', {
     attrs: {
       "href": "#"
@@ -1080,7 +1083,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "src": __webpack_require__(11)
     }
   }), _vm._v(" "), _c('h4', [_vm._v("Andrena")])])]), _vm._v(" "), _c('div', {
-    staticClass: "flex--1"
+    staticClass: "flex--1 projects__box"
   }, [_c('a', {
     attrs: {
       "href": "#"
@@ -1097,14 +1100,16 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "src": __webpack_require__(18)
     }
   }), _vm._v(" "), _c('h4', [_vm._v("Flick On Football (Personal Project)")])])])]), _vm._v(" "), (_vm.projectName === 'musicbox') ? _c('div', {
-    staticClass: "flex flex-wrap--wrap"
+    staticClass: "flex flex-wrap--wrap p1"
   }, [_vm._m(1), _vm._v(" "), _vm._m(2)]) : _vm._e(), _vm._v(" "), (_vm.projectName === 'andrena') ? _c('div', {
-    staticClass: "flex flex-wrap--wrap"
+    staticClass: "flex flex-wrap--wrap p1"
   }, [_vm._m(3), _vm._v(" "), _vm._m(4)]) : _vm._e(), _vm._v(" "), (_vm.projectName === 'flickon') ? _c('div', {
-    staticClass: "flex flex-wrap--wrap"
+    staticClass: "flex flex-wrap--wrap p1"
   }, [_vm._m(5), _vm._v(" "), _vm._m(6)]) : _vm._e()])])
 },staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {}, [_c('div', {}, [_c('h2', [_vm._v("Projects")])])])
+  return _c('div', {
+    staticClass: "p1"
+  }, [_c('div', {}, [_c('h2', [_vm._v("Projects")])])])
 },function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: "flex--2 mr-2"
@@ -1238,10 +1243,11 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "title": "github"
     }
   }, [_c('img', {
+    staticClass: "mr-1",
     attrs: {
       "src": __webpack_require__(12)
     }
-  }), _vm._v(" github")]), _vm._v(" "), _c('a', {
+  }), _vm._v("github")]), _vm._v(" "), _c('a', {
     staticClass: "mt-1",
     attrs: {
       "href": "https://stackoverflow.com/users/6774916/t-dom93",
@@ -1249,10 +1255,11 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "title": "stackoverflow"
     }
   }, [_c('img', {
+    staticClass: "mr-1",
     attrs: {
       "src": __webpack_require__(20)
     }
-  }), _vm._v(" stackoverflow")]), _vm._v(" "), _c('a', {
+  }), _vm._v("stackoverflow")]), _vm._v(" "), _c('a', {
     staticClass: "mt-1",
     attrs: {
       "href": "https://www.linkedin.com/in/toni-domazet-086a5a13a/",
@@ -1260,6 +1267,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "title": "linkedin"
     }
   }, [_c('img', {
+    staticClass: "mr-1",
     attrs: {
       "src": __webpack_require__(14)
     }
@@ -1323,7 +1331,9 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('div', {}, [_c('navigation')], 1)]), _vm._v(" "), _c('div', {
     staticClass: "contact content"
   }, [_vm._m(0), _vm._v(" "), _c('div', {
-    staticClass: "flex flex-wrap--wrap"
+    staticClass: "flex"
+  }, [_c('div', {
+    staticClass: "flex flex-wrap--wrap flex--1 p1"
   }, [_c('label', {
     attrs: {
       "for": "subject"
@@ -1398,31 +1408,6 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         _vm.formData.email = $event.target.value
       }
     }
-  }), _vm._v(" "), _c('label', {
-    attrs: {
-      "for": "msg"
-    }
-  }, [_vm._v("Message")]), _vm._v(" "), _c('textarea', {
-    directives: [{
-      name: "model",
-      rawName: "v-model",
-      value: (_vm.formData.msg),
-      expression: "formData.msg"
-    }],
-    attrs: {
-      "name": "msg",
-      "id": "msg",
-      "rows": "9"
-    },
-    domProps: {
-      "value": (_vm.formData.msg)
-    },
-    on: {
-      "input": function($event) {
-        if ($event.target.composing) { return; }
-        _vm.formData.msg = $event.target.value
-      }
-    }
   }), _vm._v(" "), _c('div', {
     staticClass: "flex mt-1",
     staticStyle: {
@@ -1448,7 +1433,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "src": __webpack_require__(15)
     }
   }) : _vm._e()]), _vm._v(" "), (_vm.isError) ? _c('div', {
-    staticClass: "error alert mt-1"
+    staticClass: "error alert mt-1 p1"
   }, [_c('p', [_vm._v("Something goes wrong. Check your form again!")]), _vm._v(" "), _c('a', {
     staticClass: "close-btn",
     attrs: {
@@ -1481,9 +1466,39 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     attrs: {
       "src": __webpack_require__(3)
     }
-  })])]) : _vm._e()])])])
+  })])]) : _vm._e()]), _vm._v(" "), _c('div', {
+    staticClass: "flex flex-wrap--wrap flex--2 flex-direction--column p1"
+  }, [_c('label', {
+    attrs: {
+      "for": "msg"
+    }
+  }, [_vm._v("Message")]), _vm._v(" "), _c('textarea', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.formData.msg),
+      expression: "formData.msg"
+    }],
+    staticClass: "flex--1",
+    attrs: {
+      "name": "msg",
+      "id": "msg",
+      "rows": "9"
+    },
+    domProps: {
+      "value": (_vm.formData.msg)
+    },
+    on: {
+      "input": function($event) {
+        if ($event.target.composing) { return; }
+        _vm.formData.msg = $event.target.value
+      }
+    }
+  })])])])])
 },staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {}, [_c('div', {}, [_c('h2', [_vm._v("Contact")])])])
+  return _c('div', {
+    staticClass: "p1"
+  }, [_c('div', {}, [_c('h2', [_vm._v("Contact")])])])
 }]}
 module.exports.render._withStripped = true
 if (false) {

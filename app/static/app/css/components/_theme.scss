@@ -26,6 +26,7 @@ SHARED
 ------------------------------------- */
 
 $primary-color: #333;
+$link-color: #428CFF;
 
 @mixin keyframes($animationName) {
     @-webkit-keyframes #{$animationName} {
@@ -70,7 +71,9 @@ body {
     font-weight: 300;
     font-size: 16px;  
 }
-
+a {
+    color: $link-color;
+}
 ::selection {
     background: #4ea5ca;
     color: #fff;

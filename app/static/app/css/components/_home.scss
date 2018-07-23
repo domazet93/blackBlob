@@ -4,6 +4,10 @@ HOME
 
 .home {
     &__links {
+        a {
+            display: flex;
+            align-items: center;
+        }
         img { max-width: 30px; }
     }
 }
