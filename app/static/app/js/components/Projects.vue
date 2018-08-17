@@ -11,7 +11,7 @@
                     <h2>Projects</h2>
                 </div>
             </div>
-            <div class="flex mb-2 p1">
+            <div class="flex mb-2 p1 flex-wrap--wrap">
                 <div class="flex--1">
                     <a href="#" @click.stop.prevent="changeView('musicbox')">
                         <img src="~images/mb_scheme.png">

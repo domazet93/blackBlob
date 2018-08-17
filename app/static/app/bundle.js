@@ -1073,7 +1073,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('div', {}, [_c('navigation')], 1)]), _vm._v(" "), _c('div', {
     staticClass: "content projects"
   }, [_vm._m(0), _vm._v(" "), _c('div', {
-    staticClass: "flex mb-2 p1"
+    staticClass: "flex mb-2 p1 flex-wrap--wrap"
   }, [_c('div', {
     staticClass: "flex--1"
   }, [_c('a', {
