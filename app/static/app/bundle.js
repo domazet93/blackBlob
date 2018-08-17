@@ -412,6 +412,32 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 
@@ -1115,13 +1141,13 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "flex--2 mr-2"
   }, [_c('h4', {
     staticClass: "underline"
-  }, [_vm._v("Project Descriprion")]), _vm._v(" "), _c('p', [_vm._v("MusicBox is a music streaming service with a specific focus on cafes, restaurants, stores and similar venues."), _c('br'), _c('br'), _vm._v("\n                    Musicbox is Single Page App and my job was to replace and separate old UI into "), _c('strong', [_vm._v("mobile")]), _vm._v(" and "), _c('strong', [_vm._v("full (desktop)")]), _vm._v(" UI using BackboneJS. BackboneJS helped in structuring app into the models and views."), _c('br'), _c('br'), _vm._v("\n                    Template is served through Django and app has many "), _c('strong', [_vm._v("Ionic")]), _vm._v(" classes for styling components.\n                    Desktop UI come after mobile UI and we give a try to Vue2Js. App is divided into the components and with help of Vuex library they all share data."), _c('br'), _c('br'), _vm._v("\n                    Webpack is used to bundle and minify output file. No tests on frontend side.\n                    Backend is written in Go and Python (Django framework) so I'm familiar with Django app structure and most of the time I used Swagger to see API design and outputs for each endpoint.\n                ")])])
+  }, [_vm._v("Project Descriprion")]), _vm._v(" "), _c('p', [_vm._v("MusicBox is a music streaming service with a specific focus on cafes, restaurants, stores and similar venues."), _c('br'), _c('br'), _vm._v("\n                    Musicbox is Single Page App and my job was to replace and separate old UI into mobile and full (desktop) UI using BackboneJS while structuring app into the models and views."), _c('br'), _c('br'), _vm._v("\n                    A template is served through Django and app has many Ionic classes for styling components.\n                    Desktop UI has come after mobile UI and I give a try to Vue2Js. An app is divided into the components and with help of Vuex library they all share data."), _c('br'), _c('br'), _vm._v("\n                    Webpack is used to bundle and minify output file. No tests on the frontend side.\n                    The backend is written in Go and Python (Django) where I caught basic things related to Django from app structure, templates, Swagger and API design.\n                ")])])
 },function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: "flex--1"
   }, [_c('h4', {
     staticClass: "underline"
-  }, [_vm._v("Technologies")]), _vm._v(" "), _c('p', [_c('strong', [_vm._v("Programming languages:")]), _vm._v(" Javascript, Python")]), _vm._v(" "), _c('p', [_c('strong', [_vm._v("Web frameworks:")]), _vm._v(" BackboneJS, Vue2, Ionic")]), _vm._v(" "), _c('p', [_c('strong', [_vm._v("Build tools:")]), _vm._v(" webpack")]), _vm._v(" "), _c('a', {
+  }, [_vm._v("Technologies")]), _vm._v(" "), _c('p', [_c('strong', [_vm._v("Programming languages:")]), _c('br'), _vm._v(" Javascript, Python")]), _vm._v(" "), _c('p', [_c('strong', [_vm._v("Web frameworks:")]), _c('br'), _vm._v(" BackboneJS, Vue2, Ionic")]), _vm._v(" "), _c('p', [_c('strong', [_vm._v("Build tools:")]), _c('br'), _vm._v(" Webpack")]), _vm._v(" "), _c('a', {
     attrs: {
       "href": "https://musicbox.com.hr/",
       "target": "_blank"
@@ -1132,7 +1158,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "flex--2 mr-2"
   }, [_c('h4', {
     staticClass: "underline"
-  }, [_vm._v("Project Descriprion")]), _vm._v(" "), _c('p', [_vm._v("Wi-Fi powered by local community.")]), _vm._v(" "), _c('p', [_vm._v("My focus was to create frontend part of the app. This isn't a single page app, instead there are many templates served by Django. "), _c('br'), _c('br'), _vm._v("\n                    Client only ask for spash page, getting-started workflow and templates for managing account (we choosed "), _c('a', {
+  }, [_vm._v("Project Descriprion")]), _vm._v(" "), _c('p', [_vm._v("Wi-Fi powered by local community.")]), _vm._v(" "), _c('p', [_vm._v("My focus was to create frontend part of the app. This isn't a single page app, instead there are many templates served by Django. "), _c('br'), _c('br'), _vm._v("\n                Client only ask for spash page, getting-started workflow and templates for managing account (we choosed "), _c('a', {
     attrs: {
       "href": "https://github.com/pennersr/django-allauth/"
     }
@@ -1142,9 +1168,9 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "flex--1"
   }, [_c('h4', {
     staticClass: "underline"
-  }, [_vm._v("Technologies")]), _vm._v(" "), _c('p', [_c('strong', [_vm._v("Programming languages:")]), _vm._v(" Javascript, Python, SASS")]), _vm._v(" "), _c('p', [_c('strong', [_vm._v("Web frameworks:")]), _vm._v(" Angular 4")]), _vm._v(" "), _c('p', [_c('strong', [_vm._v("Build tools:")]), _vm._v(" Angular CLI, webpack")]), _vm._v(" "), _c('a', {
+  }, [_vm._v("Technologies")]), _vm._v(" "), _c('p', [_c('strong', [_vm._v("Programming languages:")]), _c('br'), _vm._v(" Javascript, Python, SASS")]), _vm._v(" "), _c('p', [_c('strong', [_vm._v("Web frameworks:")]), _c('br'), _vm._v(" Angular 4")]), _vm._v(" "), _c('p', [_c('strong', [_vm._v("Build tools:")]), _c('br'), _vm._v(" Angular CLI, webpack")]), _vm._v(" "), _c('a', {
     attrs: {
-      "href": "https://andrena.tech/",
+      "href": "https://andrena.com/",
       "target": "_blank"
     }
   }, [_vm._v("VIEW PROJECT ONLINE >")])])
@@ -1153,13 +1179,13 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "flex--2 mr-2"
   }, [_c('h4', {
     staticClass: "underline"
-  }, [_vm._v("Project Descriprion")]), _vm._v("\n                Flick On Football is community for football players. They can create or join the match, chat with teams and earn reputation.\n\n                "), _c('p', [_vm._v("This is SPA app and it's completly done by myself. Frontend part use Vue2. Project is separated into the single file components, loaded through router, and they all can share data and have access to the "), _c('strong', [_vm._v("vuex store object")]), _vm._v("."), _c('br'), _c('br'), _vm._v(" "), _c('strong', [_vm._v("Node.js (Koa) ")]), _vm._v(" and "), _c('strong', [_vm._v("MongoDB")]), _vm._v(" is used for backend."), _c('br'), _c('br'), _vm._v("\n                Currently I work with "), _c('strong', [_vm._v("Cordova")]), _vm._v(" and "), _c('strong', [_vm._v("Android SDK")]), _vm._v(" to build Android apk from existing JS code.\n                ")])])
+  }, [_vm._v("Project Descriprion")]), _vm._v("\n                Flick On Football is community for football players, where they can create or join the match, chat with teams and earn reputation.\n\n                "), _c('p', [_vm._v("This is SPA app and it's completly done by myself. Frontend part use Vue2. Project is separated into the single file components, loaded through router, and they all can share data and have access to the "), _c('strong', [_vm._v("vuex store object")]), _vm._v("."), _c('br'), _c('br'), _vm._v(" "), _c('strong', [_vm._v("Node.js (Koa) ")]), _vm._v(" and "), _c('strong', [_vm._v("MongoDB")]), _vm._v(" is used on backend."), _c('br'), _c('br'), _vm._v("\n                Currently I work with "), _c('strong', [_vm._v("Cordova")]), _vm._v(" and "), _c('strong', [_vm._v("Android SDK")]), _vm._v(" to build Android apk from existing JS code.\n                ")])])
 },function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: "flex--1"
   }, [_c('h4', {
     staticClass: "underline"
-  }, [_vm._v("Technologies")]), _vm._v(" "), _c('p', [_c('strong', [_vm._v("Programming languages:")]), _vm._v(" Javascript / Node.js")]), _vm._v(" "), _c('p', [_c('strong', [_vm._v("Web frameworks:")]), _vm._v(" Vue2, Koa2, Socket.io")]), _vm._v(" "), _c('p', [_c('strong', [_vm._v("Build tools:")]), _vm._v(" webpack, Cordova")]), _vm._v(" "), _c('a', {
+  }, [_vm._v("Technologies")]), _vm._v(" "), _c('p', [_c('strong', [_vm._v("Programming languages:")]), _c('br'), _vm._v(" Javascript / Node.js")]), _vm._v(" "), _c('p', [_c('strong', [_vm._v("Web frameworks:")]), _c('br'), _vm._v(" Vue2, Koa2, Socket.io")]), _vm._v(" "), _c('p', [_c('strong', [_vm._v("Build tools:")]), _c('br'), _vm._v(" Webpack, Cordova")]), _vm._v(" "), _c('a', {
     attrs: {
       "href": "https://www.flickonfootball.com/",
       "target": "_blank"
@@ -1195,6 +1221,11 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "border-light flex--2 p1 m05"
   }, [_c('h2', [_vm._v("Employment History")]), _vm._v(" "), _c('p', [_c('span', [_vm._v("Frontend developer @")]), _c('br'), _vm._v(" "), _c('a', {
     attrs: {
+      "href": "https://www.blueface.com/",
+      "target": "_blank"
+    }
+  }, [_vm._v("Blueface")]), _c('br'), _vm._v(" "), _c('span', [_vm._v("October 2017 - ")]), _c('br'), _vm._v(" "), _c('span', [_vm._v("Dublin, Ireland")]), _c('br'), _c('br')]), _vm._v(" "), _c('p', [_c('span', [_vm._v("Frontend developer @")]), _c('br'), _vm._v(" "), _c('a', {
+    attrs: {
       "href": "http://goodcode.io/",
       "target": "_blank"
     }
@@ -1205,6 +1236,10 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   }, [_vm._v("Morris & Chapman")]), _c('br'), _vm._v(" "), _c('span', [_vm._v("March 2015 - August 2015")]), _c('br'), _vm._v(" "), _c('span', [_vm._v("Brussels, Belgium")]), _c('br')])]), _vm._v(" "), _c('div', {
     staticClass: "border-light flex--2 p1 m05"
+  }, [_c('h2', [_vm._v("Overview")]), _vm._v(" "), _c('p', [_vm._v("\n                        Frontend developer with more than 2 years experience in developing web apps."), _c('br'), _c('br'), _vm._v("\n                        Working with backend stack on few projects, mostly using Node.JS"), _c('br'), _c('br'), _vm._v(" \n                        Bachelor's degree in IT Engineering. "), _c('br'), _c('br'), _vm._v(" \n                        Passionate, self-motivated person and active member of local Javascript community.                            \n                    ")])])]), _vm._v(" "), _c('div', {
+    staticClass: "flex flex-wrap--wrap"
+  }, [_c('div', {
+    staticClass: "border-light flex--1 p1 m05"
   }, [_c('h2', [_vm._v("Stack")]), _vm._v(" "), _c('div', {
     staticClass: "flex align-items--start"
   }, [_c('img', {
@@ -1217,7 +1252,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "m0"
   }, [_vm._v("LOVE WORK WITH")]), _vm._v(" "), _c('p', {
     staticClass: "m0"
-  }, [_vm._v("Node.js, MongoDB, VueJS, "), _c('br'), _vm._v(" Webpack, SASS, SVG")])])]), _vm._v(" "), _c('div', {
+  }, [_vm._v("VueJS, Webpack "), _c('br'), _vm._v(" Node.JS,  MongoDB "), _c('br'), _vm._v("  SASS  "), _c('br')])])]), _vm._v(" "), _c('div', {
     staticClass: "flex align-items--start mt-1"
   }, [_c('img', {
     attrs: {
@@ -1229,11 +1264,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "m0"
   }, [_vm._v("CURRENTLY RESEARCHING")]), _vm._v(" "), _c('p', {
     staticClass: "m0"
-  }, [_vm._v("Angular, TypeScript")])])])])]), _vm._v(" "), _c('div', {
-    staticClass: "flex flex-wrap--wrap"
-  }, [_c('div', {
-    staticClass: "border-light flex--1 p1 m05"
-  }, [_c('h2', [_vm._v("Overview")]), _vm._v(" "), _c('p', [_vm._v("I'm Toni Domazet, Javascript developer with 2 years experience in developing web apps."), _c('br'), _c('br'), _vm._v("\n                    I have a bachelor's degree in IT Engineering. "), _c('br'), _c('br'), _vm._v(" I'm passionate, self-motivated person and active member of local Javascript community.\n                    ")])]), _vm._v(" "), _c('div', {
+  }, [_vm._v("React  "), _c('br'), _vm._v(" Functional Programming")])])])]), _vm._v(" "), _c('div', {
     staticClass: "home__links flex flex-direction--column border-light flex--1 p1 m05"
   }, [_c('h2', [_vm._v("Links")]), _vm._v(" "), _c('a', {
     staticClass: "mt-1",

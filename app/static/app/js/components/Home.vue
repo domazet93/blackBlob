@@ -9,7 +9,13 @@
             <div class="content">
                 <div class="flex flex-wrap--wrap">
                     <div class="border-light flex--2 p1 m05">
-                        <h2>Employment History</h2>
+                        <h2>Employment History</h2> 
+                        <p>
+                            <span>Frontend developer @</span><br/>
+                            <a href="https://www.blueface.com/" target="_blank">Blueface</a><br/>
+                            <span>October 2017 - </span><br/>
+                            <span>Dublin, Ireland</span><br/><br/>
+                        </p>
                         <p>
                             <span>Frontend developer @</span><br/>
                             <a href="http://goodcode.io/" target="_blank">Goodcode</a><br/>
@@ -24,31 +30,51 @@
                         </p>
                     </div>
 
-                    <div class="border-light flex--2 p1 m05">
+                    <!-- <div class="border-light flex--2 p1 m05">
                         <h2>Stack</h2>
                         <div class="flex align-items--start">
                             <img src="~images/heart.svg">&nbsp;                           
                             <div class="flex--1">
                                 <h4 class="m0">LOVE WORK WITH</h4>
-                                <p class="m0">Node.js, MongoDB, VueJS, <br /> Webpack, SASS, SVG</p>
+                                <p class="m0">VueJS, Webpack <br /> Node.JS,  MongoDB <br />  SASS  <br /></p>
                             </div>
                         </div>
                         <div class="flex align-items--start mt-1">
                             <img src="~images/search.svg">&nbsp; 
                             <div class="flex--1">
                                 <h4 class="m0">CURRENTLY RESEARCHING</h4>
-                                <p class="m0">Angular, TypeScript</p>
+                                <p class="m0">React  <br /> Functional Programming</p>
+                            </div>
+                        </div>
+                    </div>  -->
+                    <div class="border-light flex--2 p1 m05">
+                        <h2>Overview</h2>
+                        <p>
+                            Frontend developer with more than 2 years experience in developing web apps.<br /><br />
+                            Working with backend stack on few projects, mostly using Node.JS<br /><br /> 
+                            Bachelor's degree in IT Engineering. <br /><br /> 
+                            Passionate, self-motivated person and active member of local Javascript community.                            
+                        </p> 
+                    </div>
+                </div>
+                <div class="flex flex-wrap--wrap">
+                    <div class="border-light flex--1 p1 m05">
+                        <h2>Stack</h2>
+                        <div class="flex align-items--start">
+                            <img src="~images/heart.svg">&nbsp;                           
+                            <div class="flex--1">
+                                <h4 class="m0">LOVE WORK WITH</h4>
+                                <p class="m0">VueJS, Webpack <br /> Node.JS,  MongoDB <br />  SASS  <br /></p>
+                            </div>
+                        </div>
+                        <div class="flex align-items--start mt-1">
+                            <img src="~images/search.svg">&nbsp; 
+                            <div class="flex--1">
+                                <h4 class="m0">CURRENTLY RESEARCHING</h4>
+                                <p class="m0">React  <br /> Functional Programming</p>
                             </div>
                         </div>
                     </div> 
-                </div>
-                <div class="flex flex-wrap--wrap">
-                     <div class="border-light flex--1 p1 m05">
-                        <h2>Overview</h2>
-                        <p>I'm Toni Domazet, Javascript developer with 2 years experience in developing web apps.<br /><br />
-                        I have a bachelor's degree in IT Engineering. <br /><br /> I'm passionate, self-motivated person and active member of local Javascript community.
-                        </p> 
-                    </div>
                     <div class="home__links flex flex-direction--column border-light flex--1 p1 m05">
                         <h2>Links</h2>
                         <a href="https://github.com/domazet93" target="_blank" class="mt-1" title="github"><img src="~images/github.ico" class="mr-1">github</a>
