@@ -420,24 +420,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
 
 
@@ -1185,12 +1167,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "flex--1"
   }, [_c('h4', {
     staticClass: "underline"
-  }, [_vm._v("Technologies")]), _vm._v(" "), _c('p', [_c('strong', [_vm._v("Programming languages:")]), _c('br'), _vm._v(" Javascript / Node.js")]), _vm._v(" "), _c('p', [_c('strong', [_vm._v("Web frameworks:")]), _c('br'), _vm._v(" Vue2, Koa2, Socket.io")]), _vm._v(" "), _c('p', [_c('strong', [_vm._v("Build tools:")]), _c('br'), _vm._v(" Webpack, Cordova")]), _vm._v(" "), _c('a', {
-    attrs: {
-      "href": "https://www.flickonfootball.com/",
-      "target": "_blank"
-    }
-  }, [_vm._v("VIEW PROJECT ONLINE >")])])
+  }, [_vm._v("Technologies")]), _vm._v(" "), _c('p', [_c('strong', [_vm._v("Programming languages:")]), _c('br'), _vm._v(" Javascript / Node.js")]), _vm._v(" "), _c('p', [_c('strong', [_vm._v("Web frameworks:")]), _c('br'), _vm._v(" Vue2, Koa2, Socket.io")]), _vm._v(" "), _c('p', [_c('strong', [_vm._v("Build tools:")]), _c('br'), _vm._v(" Webpack, Cordova")])])
 }]}
 module.exports.render._withStripped = true
 if (false) {
@@ -1218,28 +1195,28 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('div', {
     staticClass: "flex flex-wrap--wrap"
   }, [_c('div', {
-    staticClass: "border-light flex--2 p1 m05"
-  }, [_c('h2', [_vm._v("Employment History")]), _vm._v(" "), _c('p', [_c('span', [_vm._v("Frontend developer @")]), _c('br'), _vm._v(" "), _c('a', {
+    staticClass: "home__box border-light flex--2 m05"
+  }, [_c('h2', [_vm._v("Employment History")]), _vm._v(" "), _c('p', [_c('span', [_vm._v("Frontend developer @")]), _vm._v(" "), _c('a', {
     attrs: {
       "href": "https://www.blueface.com/",
       "target": "_blank"
     }
-  }, [_vm._v("Blueface")]), _c('br'), _vm._v(" "), _c('span', [_vm._v("October 2017 - ")]), _c('br'), _vm._v(" "), _c('span', [_vm._v("Dublin, Ireland")]), _c('br'), _c('br')]), _vm._v(" "), _c('p', [_c('span', [_vm._v("Frontend developer @")]), _c('br'), _vm._v(" "), _c('a', {
+  }, [_vm._v("Blueface")]), _c('br'), _vm._v(" "), _c('span', [_vm._v("October 2017 - ")]), _c('br'), _vm._v(" "), _c('span', [_vm._v("Dublin, Ireland")]), _c('br'), _c('br')]), _vm._v(" "), _c('p', [_c('span', [_vm._v("Frontend developer @")]), _vm._v(" "), _c('a', {
     attrs: {
       "href": "http://goodcode.io/",
       "target": "_blank"
     }
-  }, [_vm._v("Goodcode")]), _c('br'), _vm._v(" "), _c('span', [_vm._v("August 2016 - September 2017")]), _c('br'), _vm._v(" "), _c('span', [_vm._v("Zagreb, Croatia")]), _c('br'), _c('br')]), _vm._v(" "), _c('p', [_c('span', [_vm._v("Frontend developer (Intern) @")]), _c('br'), _vm._v(" "), _c('a', {
+  }, [_vm._v("Goodcode")]), _c('br'), _vm._v(" "), _c('span', [_vm._v("August 2016 - September 2017")]), _c('br'), _vm._v(" "), _c('span', [_vm._v("Zagreb, Croatia")]), _c('br'), _c('br')]), _vm._v(" "), _c('p', [_c('span', [_vm._v("Frontend developer (Intern) @")]), _vm._v(" "), _c('a', {
     attrs: {
       "href": "https://www.morris-chapman.com/",
       "target": "_blank"
     }
   }, [_vm._v("Morris & Chapman")]), _c('br'), _vm._v(" "), _c('span', [_vm._v("March 2015 - August 2015")]), _c('br'), _vm._v(" "), _c('span', [_vm._v("Brussels, Belgium")]), _c('br')])]), _vm._v(" "), _c('div', {
-    staticClass: "border-light flex--2 p1 m05"
-  }, [_c('h2', [_vm._v("Overview")]), _vm._v(" "), _c('p', [_vm._v("\n                        Frontend developer with more than 2 years experience in developing web apps."), _c('br'), _c('br'), _vm._v("\n                        Working with backend stack on few projects, mostly using Node.JS"), _c('br'), _c('br'), _vm._v(" \n                        Bachelor's degree in IT Engineering. "), _c('br'), _c('br'), _vm._v(" \n                        Passionate, self-motivated person and active member of local Javascript community.                            \n                    ")])])]), _vm._v(" "), _c('div', {
+    staticClass: "home__box border-light flex--2 m05"
+  }, [_c('h2', [_vm._v("Overview")]), _vm._v(" "), _c('p', [_vm._v("\n                        Frontend developer with more than 2 years of experience in developing web apps that are maintainable, clean and works, on time. "), _c('br'), _c('br'), _vm._v("\n                        Involved in project managment using agile software development to provide stable releases."), _c('br'), _c('br'), _vm._v("\n                        Mentoring Junior/UX developers to become unicorns."), _c('br'), _c('br'), _vm._v(" \n                        Passionate, self-motivated person and active member of local Javascript community.                            \n                    ")])])]), _vm._v(" "), _c('div', {
     staticClass: "flex flex-wrap--wrap"
   }, [_c('div', {
-    staticClass: "border-light flex--1 p1 m05"
+    staticClass: "home__box border-light flex--1 m05"
   }, [_c('h2', [_vm._v("Stack")]), _vm._v(" "), _c('div', {
     staticClass: "flex align-items--start"
   }, [_c('img', {
@@ -1265,7 +1242,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_vm._v("CURRENTLY RESEARCHING")]), _vm._v(" "), _c('p', {
     staticClass: "m0"
   }, [_vm._v("React  "), _c('br'), _vm._v(" Functional Programming")])])])]), _vm._v(" "), _c('div', {
-    staticClass: "home__links flex flex-direction--column border-light flex--1 p1 m05"
+    staticClass: "home__box home__links flex flex-direction--column border-light flex--1 m05"
   }, [_c('h2', [_vm._v("Links")]), _vm._v(" "), _c('a', {
     staticClass: "mt-1",
     attrs: {

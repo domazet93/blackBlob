@@ -3,6 +3,9 @@ HOME
 ------------------------------------- */
 
 .home {
+    &__box {
+        padding: 1rem 2rem;
+    }
     &__links {
         a {
             display: flex;
@@ -10,4 +13,4 @@ HOME
         }
         img { max-width: 30px; }
     }
-}
+} 

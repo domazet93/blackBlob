@@ -81,7 +81,7 @@
                     <p><strong>Programming languages:</strong><br /> Javascript / Node.js</p>
                     <p><strong>Web frameworks:</strong><br /> Vue2, Koa2, Socket.io</p>
                     <p><strong>Build tools:</strong><br /> Webpack, Cordova</p>
-                    <a href="https://www.flickonfootball.com/" target="_blank">VIEW PROJECT ONLINE ></a>
+                    <!-- <a href="https://www.flickonfootball.com/" target="_blank">VIEW PROJECT ONLINE ></a> -->
                 </div>
             </div>
         </div>
